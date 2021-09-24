@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cómo obtener el registro de aceptación de una factura | Legalbox</title>
+      
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+      
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+      
+        <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+      
+        <link rel="stylesheet" href="../assets/css/theme.css">
+      
+        <link rel="stylesheet" href="../assets/css/vendor.css">
+      
+      </head>
+<body>
+ <header id="header" class="header header-box-shadow-on-scroll header-abs-top header-bg-transparent header-show-hide" data-hs-header-options="{
+        &quot;fixMoment&quot;: 1000,
+        &quot;fixEffect&quot;: &quot;slide&quot;
+      }">
+    <div class="header-section">
+    <!-- Topbar -->
+    <div class="container header-hide-content pt-2">
+    <div class="d-flex align-items-center">
+    
+    <div class="ml-auto">
+      <!-- Jump To -->
+      <div class="hs-unfold d-sm-none mr-2">
+        <a class="js-hs-unfold-invoker dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" data-hs-unfold-options="{
+              &quot;target&quot;: &quot;#jumpToDropdown&quot;,
+              &quot;type&quot;: &quot;css-animation&quot;,
+              &quot;event&quot;: &quot;hover&quot;,
+              &quot;hideOnScroll&quot;: &quot;true&quot;
+             }" data-hs-unfold-target="#jumpToDropdown" data-hs-unfold-invoker=""> Jump to
+        </a>
+    
+        <div id="jumpToDropdown" class="hs-unfold-content dropdown-menu hs-unfold-hidden hs-unfold-content-initialized hs-unfold-css-animation animated" data-hs-target-height="0" data-hs-unfold-content="" data-hs-unfold-content-animation-in="slideInUp" data-hs-unfold-content-animation-out="fadeOut" style="animation-duration: 300ms;">
+          <a class="dropdown-item" href="./page-faq.html">Helpppp</a>
+          <a class="dropdown-item" href="./page-contacts-agency.html">Contacts</a>
+        </div>
+      </div>
+      <!-- End Jump To -->
+    
+      <!-- Links -->
+      <div class="nav nav-sm nav-y-0 d-none d-sm-flex ml-sm-auto">
+        <a class="nav-link" href="./page-contacts-agency.html">Contactar</a>
+      </div>
+      <!-- End Links -->
+    </div>
+    
+    <ul class="list-inline ml-2 mb-0">
+      
+      <!-- Account Login -->
+      <li class="list-inline-item">
+        <div class="hs-unfold">
+          <a class="js-hs-unfold-invoker btn btn-icon btn-xs btn-ghost-secondary" href="javascript:;" data-toggle="modal" data-target="#signupModal" data-hs-unfold-invoker="">
+            <i class="fas fa-user-circle"></i>
+          </a>
+        </div>
+      </li>
+      <!-- End Account Login -->
+    </ul>
+    </div>
+    </div>
+    <!-- End Topbar -->
+    
+    <div id="logoAndNav" class="container">
+    <!-- Nav -->
+    <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
+    <!-- Logo -->
+    <a class="navbar-brand" href="./index.html" aria-label="Front">
+      <img src="./assets/svg/logos/logo-legalbox.svg" alt="Logo">
+    </a>
+    <!-- End Logo -->
+    
+    <!-- Responsive Toggle Button -->
+    <button type="button" class="navbar-toggler btn btn-icon btn-sm rounded-circle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+      <span class="navbar-toggler-default">
+        <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+          <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"></path>
+        </svg>
+      </span>
+      <span class="navbar-toggler-toggled">
+        <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+          <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"></path>
+        </svg>
+      </span>
+    </button>
+    <!-- End Responsive Toggle Button -->
+    
+    <!-- Navigation -->
+    <div id="navBar" class="collapse navbar-collapse">
+      <div class="navbar-body header-abs-top-inner">
+        <ul class="navbar-nav">
+          
+            <li class="hs-has-mega-menu navbar-nav-item"
+                data-hs-mega-menu-item-options='{
+                  "desktop": {
+                    "position": "right",
+                    "maxWidth": "260px"
+                  }
+                }'>
+              <a id="properAlignmentMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Servicios</a>
+    
+              <!-- Interactive Nav Item - Mega Menu -->
+              <div class="hs-mega-menu dropdown-menu" aria-labelledby="interactiveMegaMenu5" style="min-width: 330px;">
+                <!-- Promo Item -->
+                <div class="navbar-promo-item">
+                  <a class="navbar-promo-link" href="#">
+                    <div class="media align-items-center">
+                      <img class="navbar-promo-icon" src="../assets/svg/icons/icon-2.svg" alt="SVG">
+                      <div class="media-body">
+                        <span class="navbar-promo-title">
+                          Documentation
+                          <span class="badge badge-primary badge-pill ml-1">v2.0</span>
+                        </span>
+                        <small class="navbar-promo-text">Development guides</small>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- End Promo Item -->
+    
+                <!-- Promo Item -->
+                <div class="navbar-promo-item">
+                  <a class="navbar-promo-link" href="#">
+                    <div class="media align-items-center">
+                      <img class="navbar-promo-icon" src="../assets/svg/icons/icon-1.svg" alt="SVG">
+                      <div class="media-body">
+                        <span class="navbar-promo-title">Snippets</span>
+                        <small class="navbar-promo-text">Ready to use snippets</small>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- End Promo Item -->
+    
+                <div class="navbar-promo-footer">
+                  <!-- List -->
+                  <div class="row no-gutters">
+                    <div class="col-6">
+                      <div class="navbar-promo-footer-item">
+                        <small class="text-muted d-block">Check what's new</small>
+                        <a class="small" href="#">
+                          Changelog
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-6 navbar-promo-footer-ver-divider">
+                      <div class="navbar-promo-footer-item">
+                        <small class="text-muted d-block">Have a question?</small>
+                        <a class="small" href="#">
+                          Contact us
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End List -->
+                </div>
+              </div>
+              <!-- End Interactive Nav Item - Mega Menu -->
+            </li>
+    
+            <!-- Blog -->
+            <li class="hs-has-sub-menu navbar-nav-item">
+                <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle " href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="blogSubMenu">Recursos</a>
+    
+                <!-- Blog - Submenu -->
+                <div id="blogSubMenu" class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated" aria-labelledby="blogMegaMenu" style="min-width: 230px; animation-duration: 300ms;">
+                <a class="dropdown-item " href="./blog-journal.html">Journal</a>
+                <a class="dropdown-item " href="./blog-metro.html">Metro</a>
+                <a class="dropdown-item " href="./blog-newsroom.html">Newsroom</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item " href="./blog-profile.html">Blog Profile</a>
+                <a class="dropdown-item " href="./blog-single-article.html">Single Article</a>
+                </div>
+                <!-- End Submenu -->
+            </li>
+    
+            <li class="navbar-nav-item">
+                <a class="nav-link" href="#">Ver precios</a>
+            </li>
+    
+            <li class="navbar-nav-last-item">
+                <a class="btn btn-sm btn-outline-primary transition-3d-hover mr-2" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">Inicia Sesión</a>
+                <a class="btn btn-sm btn-primary transition-3d-hover" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">Demanda Online</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Navigation -->
+    </nav>
+    <!-- End Nav -->
+    </div>
+    </div>
+ </header>
+
+  <main id="content" role="main">
+    <div class="container space-top-3 space-bottom-2">
+      
+        <div class="w-lg-60 mx-lg-auto">
+        <div class="mb-4">
+          <h1 class="h2">Cómo obtener el registro de aceptación de una factura</h1>
+        </div>
+
+        <div class="border-top border-bottom py-4 mb-5">
+          <div class="row align-items-md-center">
+            <div class="col-md-7 mb-5 mb-md-0">
+              <div class="media align-items-center">
+                <div class="media-body font-size-1">
+                  <span class="d-block text-muted"><i class="far fa-clock mr-1"></i>1 minuto</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="d-flex justify-content-md-end align-items-center">
+                <span class="d-block small font-weight-bold text-cap mr-2">Comparte:</span>
+
+                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                  <i class="fab fa-telegram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p>Si necesitas descargar el registro de aceptación o DTE de una factura revisa este paso a paso.</p>
+      </div>
+
+
+      <div class="w-lg-60 mx-lg-auto">
+        <h2>Paso 1: Inicia sesión con tu cuenta en SII.cl</h2>
+
+        <p>Con el Rut y Clave del representante legal.</p>
+
+        <div class="my-4 my-sm-8">
+            <img class="img-fluid rounded-lg" src="../assets/img/1350x650/inicia-sesion-en-sii-cl.png" alt="Image Description">
+          </div>
+      </div>
+
+      <div class="w-lg-60 mx-lg-auto">
+        <h2>Paso 2: Ingresa a Factura Electrónica</h2>
+
+        <p>En el apartado de Servicios Online haz click en Factura electrónica.</p>
+
+        <div class="my-4 my-sm-8">
+            <img class="img-fluid rounded-lg" src="../assets/img/1350x650/factura-electronica-en-sii.png" alt="Image Description">
+          </div>
+      </div>
+
+      <div class="w-lg-60 mx-lg-auto">
+        <h2>Paso 3: Ingresa al Registro de Aceptación</h2>
+
+        <p>Haz click en la opción "Ingrese al Registro de Aceptación o Reclamos de un DTE".</p>
+
+        <div class="my-4 my-sm-8">
+            <img class="img-fluid rounded-lg" src="../assets/img/1350x650/ingresa-a-registro-de-aceptacion.png" alt="Image Description">
+          </div>
+      </div>
+      
+      <div class="w-lg-60 mx-lg-auto">
+        <h2>Paso 4: Ingresa con el Rut del emisor</h2>
+
+        <p>Ingresa tu Rut o el de tu empresa (debe ser el Rut emisor de la factura), selecciona el número o folio de la factura.</p>
+
+        <div class="my-4 my-sm-8">
+            <img class="img-fluid rounded-lg" src="../assets/img/1350x650/ingresa-rut-emisor-para-descargar-dte.png" alt="Image Description">
+          </div>
+      </div>
+
+      <div class="w-lg-60 mx-lg-auto">
+        <h2>Paso 5: Ya puedes ver el Registro de Aceptación</h2>
+
+        <p>Ya estás casi listo, puedes ver el DTE en el que consta el recibo o la aceptación de la factura.</p>
+
+        <div class="my-4 my-sm-8">
+            <img class="img-fluid rounded-lg" src="../assets/img/1350x650/revisa-registro-de-aceptación.png" alt="Image Description">
+          </div>
+      </div>
+
+      <div class="w-lg-60 mx-lg-auto">
+        <h2>Paso 6: Descarga y comparte el Registro de Aceptación</h2>
+
+        <p>Para compartir solo debes guardar como PDF (si tienes Windows apreta CTRL + P, si tienes Mac apreta Command + P).</p>
+
+        <div class="my-4 my-sm-8">
+            <img class="img-fluid rounded-lg" src="../assets/img/1350x650/descarga-pdf-de-registro-de-aceptacion.png" alt="Image Description">
+          </div>
+      </div>
+
+      <div class="w-lg-60 mx-lg-auto">
+        <h2>¿Lo lograste?</h2>
+
+      </div>
+
+      <div class="w-lg-60 mx-lg-auto">
+
+        <p>Estaremos actualizando nuestro contenido cada vez que el SII.cl renueve su página web, si tienes alguna pregunta o sugerencia de contenido, por favor <a href="#">contáctanos</a>.</p>
+
+        <p>Síguenos en <a href="#">Facebook</a> y <a href="#">Linkedin</a>.</p>
+
+        <!-- Share -->
+        <div class="row justify-content-sm-between align-items-sm-center mt-5">
+          <div class="col-sm-6 mb-2 mb-sm-0">
+            <div class="d-flex align-items-center">
+              <span class="d-block small font-weight-bold text-cap mr-2">Comparte:</span>
+
+              <a class="btn btn-xs btn-icon btn-ghost-secondary rounded-circle mr-2" href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a class="btn btn-xs btn-icon btn-ghost-secondary rounded-circle mr-2" href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a class="btn btn-xs btn-icon btn-ghost-secondary rounded-circle mr-2" href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a class="btn btn-xs btn-icon btn-ghost-secondary rounded-circle mr-2" href="#">
+                <i class="fab fa-telegram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="media align-items-center border-top border-bottom py-5 my-8">
+          <div class="avatar avatar-circle avatar-xl">
+            <img class="avatar-img" src="../assets/img/100x100/50x50.png" alt="Image Description">
+          </div>
+          <div class="media-body ml-3">
+            <small class="d-block small font-weight-bold text-cap">Escrito por</small>
+            <h3 class="mb-0">Pedro Viterbo</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container space-bottom-2 space-bottom-lg-3">
+      <!-- Title -->
+      <div class="w-md-60 text-center mx-auto mb-7">
+        <h2>Mantente informado</h2>
+        <p>Obtén artículos y noticias de temas Legales afectan tu negocio.</p>
+      </div>
+      <!-- End Title -->
+
+      <div class="w-lg-40 mx-lg-auto">
+        <!-- Form -->
+        <form class="js-validate">
+          <div class="form-row">
+            <div class="col-sm col-md-6 col-lg mb-2">
+              <div class="js-form-message">
+                <label class="sr-only" for="signupSrEmail">Tu email</label>
+                <div class="input-group">
+                  <input type="email" class="form-control" name="email" id="signupSrEmail" placeholder="Your email" aria-label="Your email" required
+                         data-msg="Please enter a valid email address.">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-auto">
+              <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-light">
+    <!-- Info -->
+    <div class="container space-2">
+      <div class="row align-items-md-center text-center text-md-left">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <h2>Crea tu cuenta y demanda en línea</h2>
+          <p class="mb-0">3 pasos para recuperar tu dinero, si tienes dudas te ayudamos</p>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <a class="btn btn-primary transition-3d-hover" href="#">Demanda Online <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- End Info -->
+    
+    <!-- Lists -->
+    <div class="container">
+      <div class="border-top space-2">
+        <div class="row justify-content-md-between">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <a class="d-inline-flex mb-4" href="#" aria-label="Front">
+              <img class="brand" src="./assets/logotest.svg" alt="Logo">
+            </a>
+            <p>Buscamos una justicia digital para resolver tus problemas.</p>
+          </div>
+    
+          <div class="col-6 col-sm-4 col-lg-2 mb-4 mb-lg-0">
+            <h5>Soluciones</h5>
+    
+            <!-- Nav Link -->
+            <ul class="nav nav-sm nav-x-0 flex-column">
+              <li class="nav-item"><a class="nav-link" href="#">Judicial</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Prejudicial</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">A medida</a></li>
+            </ul>
+            <!-- End Nav Link -->
+          </div>
+    
+          <div class="col-6 col-sm-4 col-lg-2 mb-4 mb-lg-0">
+            <h5>Recursos</h5>
+    
+            <!-- Nav Link -->
+            <ul class="nav nav-sm nav-x-0 flex-column">
+              <li class="nav-item"><a class="nav-link" href="#">Guías</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Artículos</a></li>
+            </ul>
+            <!-- End Nav Link -->
+          </div>
+    
+          <div class="col-6 col-sm-4 col-lg-2">
+            <h5>Cuenta</h5>
+    
+            <!-- Nav Link -->
+            <ul class="nav nav-sm nav-x-0 flex-column">
+              <li class="nav-item"><a class="nav-link" href="#">Crea tu cuenta</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Ingresa</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contacta</a></li>
+            </ul>
+            <!-- End Nav Link -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Lists -->
+    </footer>
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <!-- Header -->
+        <div class="modal-close">
+          <button type="button" class="btn btn-icon btn-sm btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
+            <svg width="10" height="10" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+            </svg>
+          </button>
+        </div>
+        <!-- End Header -->
+
+        <!-- Body -->
+        <div class="modal-body p-sm-5">
+          <form class="js-validate">
+            <!-- Sign in -->
+            <div id="signinModalForm">
+              <div class="text-center mb-5">
+                <h2>Sign in</h2>
+                <p>Don't have an account yet?
+                  <a class="js-animation-link" href="javascript:;"
+                     data-hs-show-animation-options='{
+                         "targetSelector": "#signupModalForm",
+                         "groupName": "idForm"
+                       }'>Sign up here</a>
+                </p>
+              </div>
+
+              <a class="btn btn-block btn-white mb-2" href="#">
+                  <span class="d-flex justify-content-center align-items-center">
+                    <img class="avatar avatar-xss mr-2" src="./assets/svg/brands/google.svg" alt="Image Description">
+                    Sign in with Google
+                  </span>
+              </a>
+
+              <a class="js-animation-link btn btn-block btn-primary mb-2" href="#"
+                 data-hs-show-animation-options='{
+                     "targetSelector": "#signinWithEmailModalForm",
+                     "groupName": "idForm"
+                   }'>Sign in with Email</a>
+            </div>
+            <!-- End Sign in -->
+
+            <!-- Sign in with Modal -->
+            <div id="signinWithEmailModalForm" style="display: none; opacity: 0;">
+              <div class="text-center mb-5">
+                <h2>Sign in</h2>
+                <p>Don't have an account yet?
+                  <a class="js-animation-link" href="javascript:;"
+                     data-hs-show-animation-options='{
+                         "targetSelector": "#signupModalForm",
+                         "groupName": "idForm"
+                       }'>Sign up here</a>
+                </p>
+              </div>
+
+              <!-- Form Group -->
+              <div class="js-form-message form-group">
+                <label class="input-label" for="signinModalFormSrEmail">Your email</label>
+                <input type="email" class="form-control" name="email" id="signinModalFormSrEmail" placeholder="email@address.com" aria-label="email@address.com" required data-msg="Please enter a valid email address.">
+              </div>
+              <!-- End Form Group -->
+
+              <!-- Form Group -->
+              <div class="js-form-message form-group">
+                <label class="input-label" for="signinModalFormSrPassword">
+                    <span class="d-flex justify-content-between align-items-center">
+                      Password
+                      <a class="js-animation-link link text-muted" href="javascript:;"
+                         data-hs-show-animation-options='{
+                           "targetSelector": "#forgotPasswordModalForm",
+                           "groupName": "idForm"
+                         }'>Forgot Password?</a>
+                    </span>
+                </label>
+                <input type="password" class="form-control" name="password" id="signinModalFormSrPassword" placeholder="8+ characters required" aria-label="8+ characters required" required data-msg="Your password is invalid. Please try again.">
+              </div>
+              <!-- End Form Group -->
+
+              <button type="submit" class="btn btn-block btn-primary">Sign in</button>
+            </div>
+            <!-- End Sign in with Modal -->
+
+            <!-- Sign up -->
+            <div id="signupModalForm" style="display: none; opacity: 0;">
+              <div class="text-center mb-5">
+                <h2>Sign up</h2>
+                <p>Already have an account?
+                  <a class="js-animation-link" href="javascript:;"
+                     data-hs-show-animation-options='{
+                         "targetSelector": "#signinModalForm",
+                         "groupName": "idForm"
+                       }'>Sign in here</a>
+                </p>
+              </div>
+
+              <a class="btn btn-block btn-white mb-2" href="#">
+                  <span class="d-flex justify-content-center align-items-center">
+                    <img class="avatar avatar-xss mr-2" src="./assets/svg/brands/google.svg" alt="Image Description">
+                    Sign up with Google
+                  </span>
+              </a>
+
+              <a class="js-animation-link btn btn-block btn-primary mb-2" href="#"
+                 data-hs-show-animation-options='{
+                     "targetSelector": "#signupWithEmailModalForm",
+                     "groupName": "idForm"
+                   }'>Sign up with Email</a>
+
+              <div class="text-center mt-3">
+                <p class="font-size-1 mb-0">By continuing you agree to our <a href="#">Terms and Conditions</a></p>
+              </div>
+            </div>
+            <!-- End Sign up -->
+
+            <!-- Sign up with Modal -->
+            <div id="signupWithEmailModalForm" style="display: none; opacity: 0;">
+              <div class="text-center mb-5">
+                <h2>Sign up</h2>
+                <p>Already have an account?
+                  <a class="js-animation-link" href="javascript:;"
+                     data-hs-show-animation-options='{
+                         "targetSelector": "#signinModalForm",
+                         "groupName": "idForm"
+                       }'>Sign in here</a>
+                </p>
+              </div>
+
+              <!-- Form Group -->
+              <div class="js-form-message form-group">
+                <label class="input-label" for="signupModalFormSrEmail">Your email</label>
+                <input type="email" class="form-control" name="email" id="signupModalFormSrEmail" placeholder="email@address.com" aria-label="email@address.com" required data-msg="Please enter a valid email address.">
+              </div>
+              <!-- End Form Group -->
+
+              <!-- Form Group -->
+              <div class="js-form-message form-group">
+                <label class="input-label" for="signupModalFormSrPassword">Password</label>
+                <input type="password" class="form-control" name="password" id="signupModalFormSrPassword" placeholder="8+ characters required" aria-label="8+ characters required" required data-msg="Your password is invalid. Please try again.">
+              </div>
+              <!-- End Form Group -->
+
+              <!-- Form Group -->
+              <div class="js-form-message form-group">
+                <label class="input-label" for="signupModalFormSrConfirmPassword">Confirm password</label>
+                <input type="password" class="form-control" name="confirmPassword" id="signupModalFormSrConfirmPassword" placeholder="8+ characters required" aria-label="8+ characters required" required data-msg="Password does not match the confirm password.">
+              </div>
+              <!-- End Form Group -->
+
+              <button type="submit" class="btn btn-block btn-primary">Sign up</button>
+
+              <div class="text-center mt-3">
+                <p class="font-size-1 mb-0">By continuing you agree to our <a href="#">Terms and Conditions</a></p>
+              </div>
+            </div>
+            <!-- End Sign up with Modal -->
+
+            <!-- Forgot Password -->
+            <div id="forgotPasswordModalForm" style="display: none; opacity: 0;">
+              <div class="text-center mb-5">
+                <h2>Forgot password?</h2>
+                <p>Enter the email address you used when you joined and we'll send you instructions to reset your password.</p>
+              </div>
+
+              <!-- Form Group -->
+              <div class="js-form-message form-group">
+                <label class="input-label" for="resetPasswordSrEmail" tabindex="0">
+                  <span class="d-flex justify-content-between align-items-center">
+                    Your email
+                    <a class="js-animation-link d-flex align-items-center link text-muted" href="javascript:;"
+                       data-hs-show-animation-options='{
+                         "targetSelector": "#signinModalForm",
+                         "groupName": "idForm"
+                       }'>
+                      <i class="fas fa-angle-left mr-2"></i> Back to Sign in
+                    </a>
+                  </span>
+                </label>
+                <input type="email" class="form-control" name="email" id="resetPasswordSrEmail" tabindex="1" placeholder="Enter your email address" aria-label="Enter your email address" required data-msg="Please enter a valid email address.">
+              </div>
+              <!-- End Form Group -->
+
+              <button type="submit" class="btn btn-block btn-primary">Submit</button>
+            </div>
+            <!-- End Forgot Password -->
+          </form>
+        </div>
+        <!-- End Body -->
+
+        <!-- Footer -->
+        <div class="modal-footer d-block text-center py-sm-5">
+          <small class="text-cap mb-4">Trusted by the world's best teams</small>
+
+          <div class="w-85 mx-auto">
+            <div class="row justify-content-between">
+              <div class="col">
+                <img class="img-fluid" src="./assets/svg/brands/gitlab-gray.svg" alt="Image Description">
+              </div>
+              <div class="col">
+                <img class="img-fluid" src="./assets/svg/brands/fitbit-gray.svg" alt="Image Description">
+              </div>
+              <div class="col">
+                <img class="img-fluid" src="./assets/svg/brands/flow-xo-gray.svg" alt="Image Description">
+              </div>
+              <div class="col">
+                <img class="img-fluid" src="./assets/svg/brands/layar-gray.svg" alt="Image Description">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Footer -->
+      </div>
+    </div>
+  </div>
+  <!-- End Sign Up Modal -->
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+     data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": 15
+         },
+         "show": {
+           "bottom": 15
+         },
+         "hide": {
+           "bottom": -15
+         }
+       }
+     }'>
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <!-- End Go to Top -->
+
+
+  <!-- JS Implementing Plugins -->
+  <script src="./assets/js/vendor.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="./assets/js/theme.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      var header = new HSHeader($('#header')).init();
+
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      var megaMenu = new HSMegaMenu($('.js-mega-menu'), {
+        desktop: {
+          position: 'left'
+        }
+      }).init();
+
+
+      // INITIALIZATION OF UNFOLD
+      // =======================================================
+      var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+
+
+      // INITIALIZATION OF SHOW ANIMATIONS
+      // =======================================================
+      $('.js-animation-link').each(function () {
+        var showAnimation = new HSShowAnimation($(this)).init();
+      });
+
+
+      // INITIALIZATION OF FORM VALIDATION
+      // =======================================================
+      $('.js-validate').each(function() {
+        $.HSCore.components.HSValidation.init($(this), {
+          rules: {
+            confirmPassword: {
+              equalTo: '#signupPassword'
+            }
+          }
+        });
+      });
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      $('.js-go-to').each(function () {
+        var goTo = new HSGoTo($(this)).init();
+      });
+    });
+  </script>
+
+  <!-- IE Support -->
+  <script>
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="./assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
+  </script>
+</body>
+</html>
