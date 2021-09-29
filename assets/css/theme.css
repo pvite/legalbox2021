@@ -354,7 +354,7 @@ template {
 
 @media (max-width: 1200px) {
     .h2,h2 {
-        font-size:calc(1.3125rem + .75vw)
+        font-size:calc(1.7rem + .75vw)
     }
 }
 
