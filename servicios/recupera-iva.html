@@ -20,661 +20,517 @@
 </head>
 <body>
   
-  <header id="header" class="header header-box-shadow-on-scroll header-abs-top header-bg-transparent header-show-hide" data-hs-header-options="{
-    &quot;fixMoment&quot;: 1000,
-    &quot;fixEffect&quot;: &quot;slide&quot;
-  }">
+<header id="header" class="header header-box-shadow-on-scroll header-abs-top header-bg-transparent header-show-hide"
+data-hs-header-options='{
+  "fixMoment": 1000,
+  "fixEffect": "slide"
+}'>
+
 <div class="header-section">
-<!-- Topbar -->
 <div class="container header-hide-content pt-2">
 <div class="d-flex align-items-center">
 
+
 <div class="ml-auto">
-  <!-- Jump To -->
   <div class="hs-unfold d-sm-none mr-2">
-    <a class="js-hs-unfold-invoker dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" data-hs-unfold-options="{
-          &quot;target&quot;: &quot;#jumpToDropdown&quot;,
-          &quot;type&quot;: &quot;css-animation&quot;,
-          &quot;event&quot;: &quot;hover&quot;,
-          &quot;hideOnScroll&quot;: &quot;true&quot;
-         }" data-hs-unfold-target="#jumpToDropdown" data-hs-unfold-invoker=""> Jump to
+    <a class="js-hs-unfold-invoker dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;"
+        data-hs-unfold-options='{
+          "target": "#jumpToDropdown",
+          "type": "css-animation",
+          "event": "hover",
+          "hideOnScroll": "true"
+          }'>
+      Saltar
     </a>
 
-    <div id="jumpToDropdown" class="hs-unfold-content dropdown-menu hs-unfold-hidden hs-unfold-content-initialized hs-unfold-css-animation animated" data-hs-target-height="0" data-hs-unfold-content="" data-hs-unfold-content-animation-in="slideInUp" data-hs-unfold-content-animation-out="fadeOut" style="animation-duration: 300ms;">
-      <a class="dropdown-item" href="./page-faq.html">Helpppp</a>
-      <a class="dropdown-item" href="./page-contacts-agency.html">Contacts</a>
+    <div id="jumpToDropdown" class="hs-unfold-content dropdown-menu">
+      <a class="dropdown-item" href="./precios.html">Ver precios</a>
+      <a class="dropdown-item" href="./contacto.html">Contactar</a>
     </div>
   </div>
-  <!-- End Jump To -->
-
-  <!-- Links -->
-  <div class="nav nav-sm nav-y-0 d-none d-sm-flex ml-sm-auto">
-    <a class="nav-link" href="./page-contacts-agency.html">Contactar</a>
-  </div>
-  <!-- End Links -->
-</div>
-
-<ul class="list-inline ml-2 mb-0">
-  
-  <!-- Account Login -->
-  <li class="list-inline-item">
-    <div class="hs-unfold">
-      <a class="js-hs-unfold-invoker btn btn-icon btn-xs btn-ghost-secondary" href="javascript:;" data-toggle="modal" data-target="#signupModal" data-hs-unfold-invoker="">
-        <i class="fas fa-user-circle"></i>
-      </a>
-    </div>
-  </li>
-  <!-- End Account Login -->
-</ul>
 </div>
 </div>
-<!-- End Topbar -->
+</div>
 
 <div id="logoAndNav" class="container">
-<!-- Nav -->
-<nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
-<!-- Logo -->
+<nav class="js-mega-menu navbar navbar-expand-lg">
 <a class="navbar-brand" href="./index.html" aria-label="Front">
-  <img src="../assets/svg/" alt="Logo">
+  <img src="../assets/svg/logos/legalbox_logo.svg" alt="Logo">
 </a>
-<!-- End Logo -->
 
-<!-- Responsive Toggle Button -->
-<button type="button" class="navbar-toggler btn btn-icon btn-sm rounded-circle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+<button type="button" class="navbar-toggler btn btn-icon btn-sm rounded-circle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="navBar"
+        data-toggle="collapse"
+        data-target="#navBar">
   <span class="navbar-toggler-default">
     <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-      <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"></path>
+      <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"/>
     </svg>
   </span>
   <span class="navbar-toggler-toggled">
     <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-      <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"></path>
+      <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
     </svg>
   </span>
 </button>
-<!-- End Responsive Toggle Button -->
 
-<!-- Navigation -->
 <div id="navBar" class="collapse navbar-collapse">
   <div class="navbar-body header-abs-top-inner">
     <ul class="navbar-nav">
-      
-      <!-- Docs -->
-      <li class="hs-has-mega-menu navbar-nav-item" data-hs-mega-menu-item-options="{
-            &quot;desktop&quot;: {
-              &quot;position&quot;: &quot;right&quot;,
-              &quot;maxWidth&quot;: &quot;260px&quot;
-            }
-          }">
-        <a id="docsMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Servicios</a>
 
-        <!-- Docs - Submenu -->
-        <div class="hs-mega-menu dropdown-menu hs-mega-menu-desktop-lg hs-position-right animated" aria-labelledby="docsMegaMenu" style="min-width: 330px; max-width: 260px; animation-duration: 300ms;">
-          <!-- Promo Item -->
-          <div class="navbar-promo-item">
-            <a class="navbar-promo-link" href="./documentation/index.html">
-              <div class="media align-items-center">
-                <img class="navbar-promo-icon" src="./assets/svg/icons/icon-2.svg" alt="SVG">
-                <div class="media-body">
-                  <span class="navbar-promo-title">
-                    Documentation
-                    <span class="badge badge-primary badge-pill ml-1">v3.3</span>
-                  </span>
-                  <small class="navbar-promo-text">Development guides</small>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- End Promo Item -->
+      <li class="hs-has-sub-menu navbar-nav-item">
+        <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle " href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Servicios</a>
 
-          <!-- Promo Item -->
-          <div class="navbar-promo-item">
-            <a class="navbar-promo-link" href="./snippets/index.html">
-              <div class="media align-items-center">
-                <img class="navbar-promo-icon" src="./assets/svg/icons/icon-1.svg" alt="SVG">
-                <div class="media-body">
-                  <span class="navbar-promo-title">Snippets</span>
-                  <small class="navbar-promo-text">Start building</small>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- End Promo Item -->
+        <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;">
+          <div class="hs-has-sub-menu">
+            <a id="navLinkPagesAccount" class="hs-mega-menu-invoker dropdown-item dropdown-item-toggle " href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesAccount">Cobranza <span class="badge badge-success badge-pill ml-2">Online</span></a>
 
-          <div class="navbar-promo-footer">
-            <!-- List -->
-            <div class="row no-gutters">
-              <div class="col-6">
-                <div class="navbar-promo-footer-item">
-                  <span class="navbar-promo-footer-text">Check what's new</span>
-                  <a class="navbar-promo-footer-text" href="./documentation/changelog.html"> Changelog</a>
-                </div>
-              </div>
-              <div class="col-6 navbar-promo-footer-ver-divider">
-                <div class="navbar-promo-footer-item">
-                  <span class="navbar-promo-footer-text">Have a question?</span>
-                  <a class="navbar-promo-footer-text" href="http://htmlstream.com/contact-us"> Contact us</a>
-                </div>
-              </div>
+            <div id="navSubmenuPagesAccount" class="hs-sub-menu dropdown-menu" aria-labelledby="navLinkPagesAccount" style="min-width: 230px;">
+              <a class="dropdown-item " href="../servicios/cobranza-judicial.html">Cobranza Judicial</a>
+              <a class="dropdown-item " href="../servicios/cobranza-judicial-prejudicial.html">Cobranza Prejudicial</a>
+              <a class="dropdown-item " href="../servicios/juicio-civil-cobro.html">Juicio Civil de Cobro</a>
+              <a class="dropdown-item " href="../servicios/certificado-incobrabilidad.html">Certificado Incobrabilidad</a>
+              <a class="dropdown-item " href="../servicios/recupera-iva.html">Recuperar IVA</a>
             </div>
-            <!-- End List -->
           </div>
-        </div>
-        <!-- End Docs - Submenu -->
-      </li>
-      <!-- End Docs -->
 
-      <!-- Blog -->
+          <a class="dropdown-item " href="../servicios/contratos.html">Contratos</a>
+
+          <a class="dropdown-item " href="../servicios/informes-legales.html">Informes Legales</a>
+
+        </div>
+      </li>
+
       <li class="hs-has-sub-menu navbar-nav-item">
         <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle " href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="blogSubMenu">Recursos</a>
 
-        <!-- Blog - Submenu -->
-        <div id="blogSubMenu" class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated" aria-labelledby="blogMegaMenu" style="min-width: 230px; animation-duration: 300ms;">
-          <a class="dropdown-item " href="./blog-journal.html">Journal</a>
-          <a class="dropdown-item " href="./blog-metro.html">Metro</a>
-          <a class="dropdown-item " href="./blog-newsroom.html">Newsroom</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item " href="./blog-profile.html">Blog Profile</a>
-          <a class="dropdown-item " href="./blog-single-article.html">Single Article</a>
+        <div id="blogSubMenu" class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg fadeOut animated" aria-labelledby="blogMegaMenu" style="min-width: 230px; display: none; animation-duration: 300ms;">
+          <a class="dropdown-item " href="../recursos/index.html">Guías y Artículos</a>
+          <a class="dropdown-item " href="../recursos/preguntas-frecuentes.html">Preguntas Frecuentes</a>
         </div>
-        <!-- End Submenu -->
       </li>
-      <!-- End Blog -->
 
-      <!-- Docs -->
-      <li class="hs-has-mega-menu navbar-nav-item" data-hs-mega-menu-item-options="{
-            &quot;desktop&quot;: {
-              &quot;position&quot;: &quot;right&quot;,
-              &quot;maxWidth&quot;: &quot;260px&quot;
-            }
-          }">
-        <a id="docsMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Ver precios</a>
+      <li class="navbar-nav-item">
+        <a class="nav-link" href="../precios.html">Precios</a>
+      </li> 
 
-        <!-- Docs - Submenu -->
-        <div class="hs-mega-menu dropdown-menu hs-mega-menu-desktop-lg hs-position-right animated" aria-labelledby="docsMegaMenu" style="min-width: 330px; max-width: 260px; animation-duration: 300ms;">
-          <!-- Promo Item -->
-          <div class="navbar-promo-item">
-            <a class="navbar-promo-link" href="./documentation/index.html">
-              <div class="media align-items-center">
-                <img class="navbar-promo-icon" src="./assets/svg/icons/icon-2.svg" alt="SVG">
-                <div class="media-body">
-                  <span class="navbar-promo-title">
-                    Documentation
-                    <span class="badge badge-primary badge-pill ml-1">v3.3</span>
-                  </span>
-                  <small class="navbar-promo-text">Development guides</small>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- End Promo Item -->
-
-          <!-- Promo Item -->
-          <div class="navbar-promo-item">
-            <a class="navbar-promo-link" href="./snippets/index.html">
-              <div class="media align-items-center">
-                <img class="navbar-promo-icon" src="./assets/svg/icons/icon-1.svg" alt="SVG">
-                <div class="media-body">
-                  <span class="navbar-promo-title">Snippets</span>
-                  <small class="navbar-promo-text">Start building</small>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- End Promo Item -->
-
-          <div class="navbar-promo-footer">
-            <!-- List -->
-            <div class="row no-gutters">
-              <div class="col-6">
-                <div class="navbar-promo-footer-item">
-                  <span class="navbar-promo-footer-text">Check what's new</span>
-                  <a class="navbar-promo-footer-text" href="./documentation/changelog.html"> Changelog</a>
-                </div>
-              </div>
-              <div class="col-6 navbar-promo-footer-ver-divider">
-                <div class="navbar-promo-footer-item">
-                  <span class="navbar-promo-footer-text">Have a question?</span>
-                  <a class="navbar-promo-footer-text" href="http://htmlstream.com/contact-us"> Contact us</a>
-                </div>
-              </div>
-            </div>
-            <!-- End List -->
-          </div>
-        </div>
-        <!-- End Docs - Submenu -->
-      </li>
-      <!-- End Docs -->
-
-      <!-- Button -->
       <li class="navbar-nav-last-item">
-        <a class="btn btn-sm btn-primary transition-3d-hover" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">Demanda Online</a>
+        <a class="btn btn-sm btn-outline-primary transition-3d-hover mr-2" href="#" target="_blank">Inicia Sesión</a>
+        <a class="btn btn-sm btn-primary transition-3d-hover" href="#" target="_blank">Demanda Online</a>
       </li>
-      <!-- End Button -->
     </ul>
   </div>
 </div>
-<!-- End Navigation -->
 </nav>
-<!-- End Nav -->
 </div>
 </div>
 </header>
 
-
-  <main id="content" role="main">
-    
-    <div class="position-relative space-top-2 space-top-lg-3">
-      <div class="space-top-2">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-7 col-lg-8">
-              <span class="badge badge-pill badge-success mb-3">Servicios</span>
-              <h1 class="text-lh-sm">Recupera IVA de Facturas Incobrables</h1>
-              <p>Exige el pago de facturas, cheques o pagarés con una demanda en el Poder Judicial</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container space-top-md-2 position-md-absolute top-0 right-0 left-0">
-        <div class="row justify-content-end">
-          <div id="stickyBlockStartPoint" class="col-md-5 col-lg-4 space-top-2 space-top-lg-3 position-relative z-index-2" style="">
-            <div class="js-sticky-block card card-bordered" data-hs-sticky-block-options="{
-                   &quot;parentSelector&quot;: &quot;#stickyBlockStartPoint&quot;,
-                   &quot;breakpoint&quot;: &quot;md&quot;,
-                   &quot;startPoint&quot;: &quot;#stickyBlockStartPoint&quot;,
-                   &quot;endPoint&quot;: &quot;#stickyBlockEndPoint&quot;,
-                   &quot;stickyOffsetTop&quot;: 12,
-                   &quot;stickyOffsetBottom&quot;: 12
-                 }" style="">
-              <div class="position-relative p-1">
-                
-              </div>
-
-              <div class="card-body">
-                <div class="mb-3">
-                  <span class="h2 text-lh-sm mr-1 mb-0">10%</span>
-                  <span class="lead text-muted text-lh-sm"><br>del total cobrado</span>
-                </div>
-
-                <div class="mb-2">
-                  <a class="btn btn-block btn-primary transition-3d-hover" href="#">Demanda Online</a>
-                </div>
-
-                <div class="text-center mb-4">
-                  <p class="small">Gastos de notificación y notaría: $160.000</p>
-                </div>
-
-                <h2 class="h4">Además obtén</h2>
-
-                <!-- Icon Block -->
-                <div class="media text-body font-size-1 mb-2">
-                  <div class="min-w-3rem text-center mr-3">
-                    <i class="fa fa-user-circle"></i>
-                  </div>
-                  <div class="media-body">
-                    Cuenta gratis
-                  </div>
-                </div>
-                <!-- End Icon Block -->
-
-                <!-- Icon Block -->
-                <div class="media text-body font-size-1 mb-2">
-                  <div class="min-w-3rem text-center mr-3">
-                    <i class="fa fa-bullhorn"></i>
-                  </div>
-                  <div class="media-body">
-                    Reportes en línea
-                  </div>
-                </div>
-                <!-- End Icon Block -->
-
-                <!-- Icon Block -->
-                <div class="media text-body font-size-1 mb-2">
-                  <div class="min-w-3rem text-center mr-3">
-                    <i class="fa fa-balance-scale"></i>
-                  </div>
-                  <div class="media-body">
-                    Asesoría legal
-                  </div>
-                </div>
-                <!-- End Icon Block -->
-
-              </div>
-
-              <!-- Button trigger modal -->
-              <a class="card-footer text-center font-weight-bold py-3" data-toggle="modal" data-target="#copyToClipboardModal" href="javascript:;">
-                <i class="fa fa-envelope mr-1"></i>
-                Contactar
-              </a>
-              <!-- End Button trigger modal -->
-            </div>
+<main id="content" role="main">
+  
+  <div class="position-relative space-top-2 space-top-lg-3">
+    <div class="space-top-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-lg-8">
+            <span class="badge badge-pill badge-success mb-3">Servicios</span>
+            <h1 class="text-lh-sm">Recupera IVA de Facturas Incobrables</h1>
+            <p>Exige el pago de facturas, cheques o pagarés con una demanda en el Poder Judicial</p>
           </div>
         </div>
       </div>
     </div>
+    <div class="container space-top-md-2 position-md-absolute top-0 right-0 left-0">
+      <div class="row justify-content-end">
+        <div id="stickyBlockStartPoint" class="col-md-5 col-lg-4 space-top-2 space-top-lg-3 position-relative z-index-2" style="">
+          <div class="js-sticky-block card card-bordered" data-hs-sticky-block-options="{
+                  &quot;parentSelector&quot;: &quot;#stickyBlockStartPoint&quot;,
+                  &quot;breakpoint&quot;: &quot;md&quot;,
+                  &quot;startPoint&quot;: &quot;#stickyBlockStartPoint&quot;,
+                  &quot;endPoint&quot;: &quot;#stickyBlockEndPoint&quot;,
+                  &quot;stickyOffsetTop&quot;: 12,
+                  &quot;stickyOffsetBottom&quot;: 12
+                }" style="">
+            <div class="position-relative p-1">
+              
+            </div>
 
-    <div class="container space-top-2 space-top-md-1">
-      <div class="row">
-        <div class="col-md-7 col-lg-8">
-          <div class="pt-0 mt-0">
+            <div class="card-body">
+              <div class="mb-3">
+                <span class="h2 text-lh-sm mr-1 mb-0">10%</span>
+                <span class="lead text-muted text-lh-sm"><br>del total cobrado</span>
+              </div>
 
-            <h3 class="mb-4">¿Qué es y cómo funciona?</h3>
+              <div class="mb-2">
+                <a class="btn btn-block btn-primary transition-3d-hover" href="#">Demanda Online</a>
+              </div>
 
-            <p>Es una demanda que consiste en exigir el pago de títulos ejecutivos impagos (facturas, cheques o pagarés) a través de un Juzgado del Poder Judicial.</p>
-            
-            <p>Con la cobranza judicial puedes cobrar a tu deudor el servicio o producto que vendiste.</p>
+              <div class="text-center mb-4">
+                <p class="small">Gastos de notificación y notaría: $160.000</p>
+              </div>
 
-            <!-- Read More - Collapse -->
-            <div class="collapse" id="collapseDescriptionSection">
-              <h4>¿Cómo funciona?</h4>
+              <h2 class="h4">Además obtén</h2>
 
-              <p>Es 100% online y solo debes crear tu cuenta, subir los documentos a cobrar y los datos del deudor.  </p>
+              <!-- Icon Block -->
+              <div class="media text-body font-size-1 mb-2">
+                <div class="min-w-3rem text-center mr-3">
+                  <i class="fa fa-user-circle"></i>
+                </div>
+                <div class="media-body">
+                  Cuenta gratis
+                </div>
+              </div>
+              <!-- End Icon Block -->
 
-              <p>Luego, nuestros abogados evaluarán la factibilidad de la demanda y cuando esté todo listo te avisaremos para que firmes el mandato judicial (poder que nos permite representarte ante el juzgado).</p>
+              <!-- Icon Block -->
+              <div class="media text-body font-size-1 mb-2">
+                <div class="min-w-3rem text-center mr-3">
+                  <i class="fa fa-bullhorn"></i>
+                </div>
+                <div class="media-body">
+                  Reportes en línea
+                </div>
+              </div>
+              <!-- End Icon Block -->
 
-              <p>Revisa más abajo los requisitos que deben cumplir las facturas, cheques o pagarés para poder realizar la cobranza judicial.</p>
+              <!-- Icon Block -->
+              <div class="media text-body font-size-1 mb-2">
+                <div class="min-w-3rem text-center mr-3">
+                  <i class="fa fa-balance-scale"></i>
+                </div>
+                <div class="media-body">
+                  Asesoría legal
+                </div>
+              </div>
+              <!-- End Icon Block -->
 
-              <h4>Debes saber</h4>
+            </div>
 
-              <p>El trámite puede durar entre 4 y 12 meses, y recuperar el dinero depende principalmente de la capacidad de pago del deudor, por eso te recomendamos iniciar la cobranza judicial si el deudor tiene la capacidad pero no prioriza tu pago. Contáctanos si tienes algún caso particular o te gustaría asesorarte.</p>
-
-              <p>Además, la cobranza judicial solo puede ser realizada por abogados.</p>
-
-             </div>
-            <!-- End Read More - Collapse -->
-
-            <!-- Link -->
-            <a class="link link-collapse small font-size-1 font-weight-bold pt-1" data-toggle="collapse" href="#collapseDescriptionSection" role="button" aria-expanded="false" aria-controls="collapseDescriptionSection">
-              <span class="link-collapse-default">Leer más</span>
-              <span class="link-collapse-active">Leer menos</span>
-              <span class="link-icon ml-1">+</span>
+            <!-- Button trigger modal -->
+            <a class="card-footer text-center font-weight-bold py-3" data-toggle="modal" data-target="#copyToClipboardModal" href="javascript:;">
+              <i class="fa fa-envelope mr-1"></i>
+              Contactar
             </a>
-            <!-- End Link -->
+            <!-- End Button trigger modal -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="container space-top-2 space-top-md-1">
+    <div class="row">
+      <div class="col-md-7 col-lg-8">
+        <div class="pt-0 mt-0">
+
+          <h3 class="mb-4">¿Qué es y cómo funciona?</h3>
+
+          <p>Es una demanda que consiste en exigir el pago de títulos ejecutivos impagos (facturas, cheques o pagarés) a través de un Juzgado del Poder Judicial.</p>
           
-          <div class="border-top pt-7 mt-7">
-            <h3 class="mb-4">¿Qué puedes cobrar?</h3>
-            <div class="row mx-n2 mx-lg-n3">
+          <p>Con la cobranza judicial puedes cobrar a tu deudor el servicio o producto que vendiste.</p>
 
-              <article class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0">
-                <div class="card card-bordered card-hover-shadow w-100">
-                  <div class="card-body">
-                    <h3 class="mb-3">
-                      <a class="text-dark" href="job-overview.html" tabindex="0">Facturas</a>
-                    </h3>
-                    <span class="d-block font-size-1 text-body mb-1">A crédito y aceptadas</span>
-                  </div>
-                  <div class="card-footer">
-                    <ul class="list-inline list-separator small text-body">
-                      <li class="list-inline-item">Vencimiento: Menor a 1 año</li>
-                    </ul>
-                  </div>
-                </div>
-              </article>
+          <!-- Read More - Collapse -->
+          <div class="collapse" id="collapseDescriptionSection">
+            <h4>¿Cómo funciona?</h4>
 
-              <article class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0">
-                <div class="card card-bordered card-hover-shadow w-100">
-                  <div class="card-body">
-                    <h3 class="mb-3">
-                      <a class="text-dark" href="job-overview.html" tabindex="0">Cheques</a>
-                    </h3>
-                    <span class="d-block font-size-1 text-body mb-1">Con acta de protesto</span>
-                  </div>
-                  <div class="card-footer">
-                    <ul class="list-inline list-separator small text-body">
-                      <li class="list-inline-item">Vencimiento: Menor a 1 año</li>
-                    </ul>
-                  </div>
-                </div>
-              </article> 
+            <p>Es 100% online y solo debes crear tu cuenta, subir los documentos a cobrar y los datos del deudor.  </p>
 
+            <p>Luego, nuestros abogados evaluarán la factibilidad de la demanda y cuando esté todo listo te avisaremos para que firmes el mandato judicial (poder que nos permite representarte ante el juzgado).</p>
 
-                <article class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0">
-                  <div class="card card-bordered card-hover-shadow w-100">
-                  <div class="card-body">
-                    <h3 class="mb-3">
-                      <a class="text-dark" href="job-overview.html" tabindex="0">Pagarés</a>
-                    </h3>
-                    <span class="d-block font-size-1 text-body mb-1">Legalizados en notaría</span>
-                  </div>
-                  <div class="card-footer">
-                    <ul class="list-inline list-separator small text-body">
-                      <li class="list-inline-item">Vencimiento: Menor a 1 año</li>
-                    </ul>
-                  </div>
-                </div>
-              </article> 
+            <p>Revisa más abajo los requisitos que deben cumplir las facturas, cheques o pagarés para poder realizar la cobranza judicial.</p>
+
+            <h4>Debes saber</h4>
+
+            <p>El trámite puede durar entre 4 y 12 meses, y recuperar el dinero depende principalmente de la capacidad de pago del deudor, por eso te recomendamos iniciar la cobranza judicial si el deudor tiene la capacidad pero no prioriza tu pago. Contáctanos si tienes algún caso particular o te gustaría asesorarte.</p>
+
+            <p>Además, la cobranza judicial solo puede ser realizada por abogados.</p>
 
             </div>
+          <!-- End Read More - Collapse -->
 
-          </div>
-
-
-          <div class="border-top pt-7 mt-7">
-            <h3 class="mb-4">¿Cuánto puedes cobrar?</h3>
-
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="media text-body font-size-1 mb-3">
-                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                  <div class="media-body">
-                    Monto total adeudado
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-6">
-                <div class="media text-body font-size-1 mb-3">
-                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                  <div class="media-body">
-                    Intereses (12% anual aprox.)
-                  </div>
-                </div>
-              </div>
-              </div>
-
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="media text-body font-size-1 mb-3">
-                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                  <div class="media-body">
-                    Notificaciones judiciales ($150.000 aprox.)
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <!-- Sticky Block End Point -->
-    <div id="stickyBlockEndPoint"></div>
-
-    <div class="space-top-1"></div>
-
-    <!-- Related Courses -->
-    <div class="container space-bottom-1">
-      <div class="border-top pt-11 mt-7">
-        
-        <div class="row justify-content-lg-between align-items-lg-center">
-          <div class="col-lg-5 mb-7 mb-lg-0">
-            <!-- Info -->
-            <div class="mb-5">
-              <h2>Si tienes dudas o buscas asesoría <span class="text-primary text-highlight-warning">ponte en contacto</span></h2>
-              <p>Te podemos entregar un servicio jurídico a medida para el control legal de tu empresa.</p>
-            </div>
-      
-            <h4 class="mb-3">También te podemos ayudar con:</h4>
-      
-            <div class="media text-body mb-3">
-              <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-              <div class="media-body">
-                Asesoría legal por abogados
-              </div>
-            </div>
-            <div class="media text-body mb-3">
-              <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-              <div class="media-body">
-                Análisis jurídico de documentos por cobrar
-              </div>
-            </div>
-            <div class="media text-body mb-3">
-              <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-              <div class="media-body">
-                Configuración jurídica de tu negocio
-              </div>
-            </div>
-            <!-- End Info -->
-          </div>
-      
-          <div class="col-lg-6">
-            <div class="ml-lg-5">
-              <!-- Form -->
-              <form class="js-validate card shadow-lg mb-4">
-                <div class="card-header border-0 bg-light text-center py-4 px-4 px-md-6">
-                  <h2 class="h4 mb-0">Datos de contacto</h2>
-                </div>
-      
-                <div class="card-body p-4 p-md-6">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <!-- Form Group -->
-                      <div class="js-form-message form-group">
-                        <label for="firstNameExample1" class="input-label">Nombre</label>
-                        <input type="text" class="form-control" name="firstNameExample1" id="firstNameExample1" placeholder="Sofía" aria-label="Sofía" required
-                               data-msg="Please enter first your name">
-                      </div>
-                      <!-- End Form Group -->
-                    </div>
-      
-                    <div class="col-sm-6">
-                      <!-- Form Group -->
-                      <div class="js-form-message form-group">
-                        <label for="lastNameExample1" class="input-label">Apellido</label>
-                        <input type="text" class="form-control" name="lastNameExample1" id="lastNameExample1" placeholder="Gonzalez" aria-label="Gonzalez" required
-                               data-msg="Please enter last your name">
-                      </div>
-                      <!-- End Form Group -->
-                    </div>
-      
-                    <div class="col-sm-12">
-                      <!-- Form Group -->
-                      <div class="js-form-message form-group">
-                        <label for="emailAddressExample1" class="input-label">Email</label>
-                        <input type="email" class="form-control" name="emailAddressExample1" id="emailAddressExample1" placeholder="sofia@empresa.cl" aria-label="sofia@empresa.cl" required
-                               data-msg="Please enter a valid email address">
-                      </div>
-                      <!-- End Form Group -->
-                    </div>
-      
-                    <div class="col-sm-12">
-                      <!-- Form Group -->
-                      <div class="js-form-message form-group">
-                        <label for="message" class="input-label">Mensaje</label>
-                        <div class="input-group">
-                          <textarea class="form-control" rows="4" name="message" id="message" placeholder="Hola, necesito ayuda con..." aria-label="Hola, necesito ayuda con..." required
-                                    data-msg="Please enter a reason."></textarea>
-                        </div>
-                      </div>
-                      <!-- End Form Group -->
-                    </div>
-                  </div>
-      
-                  <button type="submit" class="btn btn-block btn-primary transition-3d-hover">Contactar</button>
-                </div>
-              </form>
-              <!-- End Form -->
-      
-              <div class="text-center">
-                <p class="small">Te contactaremos en menos de 24 horas</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    <!-- End Related Courses -->
-  </main>
-
-<!-- Signup Form Section -->
-<div class="position-relative">
-  <div class="container space-2">
-    
-  </div>
-  </div>
-  <!-- End Signup Form Section -->
-  
-  
-  
-  <footer class="bg-light">
-  <!-- Info -->
-  <div class="container space-2">
-    <div class="row align-items-md-center text-center text-md-left">
-      <div class="col-md-6 mb-3 mb-md-0">
-        <h2>Crea tu cuenta y demanda en línea</h2>
-        <p class="mb-0">3 pasos para recuperar tu dinero, si tienes dudas te ayudamos</p>
-      </div>
-      <div class="col-md-6 text-md-right">
-        <a class="btn btn-primary transition-3d-hover" href="#">Demanda Online <i class="fas fa-angle-right fa-sm ml-1"></i></a>
-      </div>
-    </div>
-  </div>
-  <!-- End Info -->
-  
-  <!-- Lists -->
-  <div class="container">
-    <div class="border-top space-2">
-      <div class="row justify-content-md-between">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <a class="d-inline-flex mb-4" href="#" aria-label="Front">
-            <img class="brand" src="./assets/logotest.svg" alt="Logo">
+          <!-- Link -->
+          <a class="link link-collapse small font-size-1 font-weight-bold pt-1" data-toggle="collapse" href="#collapseDescriptionSection" role="button" aria-expanded="false" aria-controls="collapseDescriptionSection">
+            <span class="link-collapse-default">Leer más</span>
+            <span class="link-collapse-active">Leer menos</span>
+            <span class="link-icon ml-1">+</span>
           </a>
-          <p>Buscamos una justicia digital para resolver tus problemas.</p>
+          <!-- End Link -->
+
+        
+        <div class="border-top pt-7 mt-7">
+          <h3 class="mb-4">¿Qué puedes cobrar?</h3>
+          <div class="row mx-n2 mx-lg-n3">
+
+            <article class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0">
+              <div class="card card-bordered card-hover-shadow w-100">
+                <div class="card-body">
+                  <h3 class="mb-3">
+                    <a class="text-dark" href="job-overview.html" tabindex="0">Facturas</a>
+                  </h3>
+                  <span class="d-block font-size-1 text-body mb-1">A crédito y aceptadas</span>
+                </div>
+                <div class="card-footer">
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Vencimiento: Menor a 1 año</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0">
+              <div class="card card-bordered card-hover-shadow w-100">
+                <div class="card-body">
+                  <h3 class="mb-3">
+                    <a class="text-dark" href="job-overview.html" tabindex="0">Cheques</a>
+                  </h3>
+                  <span class="d-block font-size-1 text-body mb-1">Con acta de protesto</span>
+                </div>
+                <div class="card-footer">
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Vencimiento: Menor a 1 año</li>
+                  </ul>
+                </div>
+              </div>
+            </article> 
+
+
+              <article class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0">
+                <div class="card card-bordered card-hover-shadow w-100">
+                <div class="card-body">
+                  <h3 class="mb-3">
+                    <a class="text-dark" href="job-overview.html" tabindex="0">Pagarés</a>
+                  </h3>
+                  <span class="d-block font-size-1 text-body mb-1">Legalizados en notaría</span>
+                </div>
+                <div class="card-footer">
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Vencimiento: Menor a 1 año</li>
+                  </ul>
+                </div>
+              </div>
+            </article> 
+
+          </div>
+
         </div>
-  
-        <div class="col-6 col-sm-4 col-lg-2 mb-4 mb-lg-0">
-          <h5>Soluciones</h5>
-  
-          <!-- Nav Link -->
-          <ul class="nav nav-sm nav-x-0 flex-column">
-            <li class="nav-item"><a class="nav-link" href="#">Judicial</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Prejudicial</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">A medida</a></li>
-          </ul>
-          <!-- End Nav Link -->
-        </div>
-  
-        <div class="col-6 col-sm-4 col-lg-2 mb-4 mb-lg-0">
-          <h5>Recursos</h5>
-  
-          <!-- Nav Link -->
-          <ul class="nav nav-sm nav-x-0 flex-column">
-            <li class="nav-item"><a class="nav-link" href="#">Guías</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Artículos</a></li>
-          </ul>
-          <!-- End Nav Link -->
-        </div>
-  
-        <div class="col-6 col-sm-4 col-lg-2">
-          <h5>Cuenta</h5>
-  
-          <!-- Nav Link -->
-          <ul class="nav nav-sm nav-x-0 flex-column">
-            <li class="nav-item"><a class="nav-link" href="#">Crea tu cuenta</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Ingresa</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contacta</a></li>
-          </ul>
-          <!-- End Nav Link -->
+
+
+        <div class="border-top pt-7 mt-7">
+          <h3 class="mb-4">¿Cuánto puedes cobrar?</h3>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="media text-body font-size-1 mb-3">
+                <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                <div class="media-body">
+                  Monto total adeudado
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="media text-body font-size-1 mb-3">
+                <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                <div class="media-body">
+                  Intereses (12% anual aprox.)
+                </div>
+              </div>
+            </div>
+            </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="media text-body font-size-1 mb-3">
+                <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                <div class="media-body">
+                  Notificaciones judiciales ($150.000 aprox.)
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- End Lists -->
-  </footer>
+</div>
+
+  <!-- Sticky Block End Point -->
+  <div id="stickyBlockEndPoint"></div>
+
+  <div class="space-top-1"></div>
+
+  <!-- Related Courses -->
+  <div class="container space-bottom-1">
+    <div class="border-top pt-11 mt-7">
+      
+      <div class="row justify-content-lg-between align-items-lg-center">
+        <div class="col-lg-5 mb-7 mb-lg-0">
+          <!-- Info -->
+          <div class="mb-5">
+            <h2>Si tienes dudas o buscas asesoría <span class="text-primary text-highlight-warning">ponte en contacto</span></h2>
+            <p>Te podemos entregar un servicio jurídico a medida para el control legal de tu empresa.</p>
+          </div>
+    
+          <h4 class="mb-3">También te podemos ayudar con:</h4>
+    
+          <div class="media text-body mb-3">
+            <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+            <div class="media-body">
+              Asesoría legal por abogados
+            </div>
+          </div>
+          <div class="media text-body mb-3">
+            <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+            <div class="media-body">
+              Análisis jurídico de documentos por cobrar
+            </div>
+          </div>
+          <div class="media text-body mb-3">
+            <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+            <div class="media-body">
+              Configuración jurídica de tu negocio
+            </div>
+          </div>
+          <!-- End Info -->
+        </div>
+    
+        <div class="col-lg-6">
+          <div class="ml-lg-5">
+            <!-- Form -->
+            <form class="js-validate card shadow-lg mb-4">
+              <div class="card-header border-0 bg-light text-center py-4 px-4 px-md-6">
+                <h2 class="h4 mb-0">Datos de contacto</h2>
+              </div>
+    
+              <div class="card-body p-4 p-md-6">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- Form Group -->
+                    <div class="js-form-message form-group">
+                      <label for="firstNameExample1" class="input-label">Nombre</label>
+                      <input type="text" class="form-control" name="firstNameExample1" id="firstNameExample1" placeholder="Sofía" aria-label="Sofía" required
+                              data-msg="Please enter first your name">
+                    </div>
+                    <!-- End Form Group -->
+                  </div>
+    
+                  <div class="col-sm-6">
+                    <!-- Form Group -->
+                    <div class="js-form-message form-group">
+                      <label for="lastNameExample1" class="input-label">Apellido</label>
+                      <input type="text" class="form-control" name="lastNameExample1" id="lastNameExample1" placeholder="Gonzalez" aria-label="Gonzalez" required
+                              data-msg="Please enter last your name">
+                    </div>
+                    <!-- End Form Group -->
+                  </div>
+    
+                  <div class="col-sm-12">
+                    <!-- Form Group -->
+                    <div class="js-form-message form-group">
+                      <label for="emailAddressExample1" class="input-label">Email</label>
+                      <input type="email" class="form-control" name="emailAddressExample1" id="emailAddressExample1" placeholder="sofia@empresa.cl" aria-label="sofia@empresa.cl" required
+                              data-msg="Please enter a valid email address">
+                    </div>
+                    <!-- End Form Group -->
+                  </div>
+    
+                  <div class="col-sm-12">
+                    <!-- Form Group -->
+                    <div class="js-form-message form-group">
+                      <label for="message" class="input-label">Mensaje</label>
+                      <div class="input-group">
+                        <textarea class="form-control" rows="4" name="message" id="message" placeholder="Hola, necesito ayuda con..." aria-label="Hola, necesito ayuda con..." required
+                                  data-msg="Please enter a reason."></textarea>
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+                  </div>
+                </div>
+    
+                <button type="submit" class="btn btn-block btn-primary transition-3d-hover">Contactar</button>
+              </div>
+            </form>
+            <!-- End Form -->
+    
+            <div class="text-center">
+              <p class="small">Te contactaremos en menos de 24 horas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  <!-- End Related Courses -->
+</main>
+
+<footer class="bg-light">
+<!-- Info -->
+<div class="container space-2">
+  <div class="row align-items-md-center text-center text-md-left">
+    <div class="col-md-6 mb-3 mb-md-0">
+      <h2>Crea tu cuenta y demanda en línea</h2>
+      <p class="mb-0">3 pasos para recuperar tu dinero, si tienes dudas te ayudamos</p>
+    </div>
+    <div class="col-md-6 text-md-right">
+      <a class="btn btn-primary transition-3d-hover" href="#">Demanda Online <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+    </div>
+  </div>
+</div>
+<!-- End Info -->
+
+<!-- Lists -->
+<div class="container">
+  <div class="border-top space-2">
+    <div class="row justify-content-md-between">
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <a class="d-inline-flex mb-4" href="#" aria-label="Front">
+          <img class="brand" src="./assets/logotest.svg" alt="Logo">
+        </a>
+        <p>Buscamos una justicia digital para resolver tus problemas.</p>
+      </div>
+
+      <div class="col-6 col-sm-4 col-lg-2 mb-4 mb-lg-0">
+        <h5>Soluciones</h5>
+
+        <!-- Nav Link -->
+        <ul class="nav nav-sm nav-x-0 flex-column">
+          <li class="nav-item"><a class="nav-link" href="#">Judicial</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Prejudicial</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">A medida</a></li>
+        </ul>
+        <!-- End Nav Link -->
+      </div>
+
+      <div class="col-6 col-sm-4 col-lg-2 mb-4 mb-lg-0">
+        <h5>Recursos</h5>
+
+        <!-- Nav Link -->
+        <ul class="nav nav-sm nav-x-0 flex-column">
+          <li class="nav-item"><a class="nav-link" href="#">Guías</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Artículos</a></li>
+        </ul>
+        <!-- End Nav Link -->
+      </div>
+
+      <div class="col-6 col-sm-4 col-lg-2">
+        <h5>Cuenta</h5>
+
+        <!-- Nav Link -->
+        <ul class="nav nav-sm nav-x-0 flex-column">
+          <li class="nav-item"><a class="nav-link" href="#">Crea tu cuenta</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Ingresa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacta</a></li>
+        </ul>
+        <!-- End Nav Link -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Lists -->
+</footer>
   
 
 
