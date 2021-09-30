@@ -6199,7 +6199,7 @@
 
 .hs-menu-initialized.hs-menu-horizontal .hs-mega-menu.hs-position-right {
     left: auto;
-    /* right: 0 */
+    right: 0
 }
 
 .hs-menu-initialized.hs-menu-horizontal .hs-mega-menu.hs-position-center {
