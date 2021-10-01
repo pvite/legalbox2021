@@ -4994,7 +4994,7 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: .75rem 1rem;
+    padding: .75rem 0rem;
     margin-bottom: 1rem;
     list-style: none;
     background-color: transparent;
