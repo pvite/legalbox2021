@@ -500,7 +500,7 @@
               <div class="col-sm-6 px-2">
                 <div class="js-form-message form-group">
                   <label class="sr-only" for="firstNameExample2">Nombre</label>
-                  <input type="text" class="form-control" name="firstNameExample2" id="firstNameExample2" placeholder="Nombre" aria-label="First name" required
+                  <input type="text" class="form-control" name="firstname" id="firstNameExample2" placeholder="Nombre" aria-label="First name" required
                          data-msg="Please enter first your name">
                 </div>
               </div>
@@ -508,7 +508,7 @@
               <div class="col-sm-6 px-2">
                 <div class="js-form-message form-group">
                   <label class="sr-only" for="lastNameExample2">Apellido</label>
-                  <input type="text" class="form-control" name="lastNameExample2" id="lastNameExample2" placeholder="Apellido" aria-label="Last name" required
+                  <input type="text" class="form-control" name="lastname" id="lastNameExample2" placeholder="Apellido" aria-label="Last name" required
                          data-msg="Please enter last your name">
                 </div>
               </div>
@@ -516,15 +516,15 @@
               <div class="col-sm-6 px-2">
                 <div class="js-form-message form-group">
                   <label class="sr-only" for="workEmailAddress">Email</label>
-                  <input type="email" class="form-control" name="workEmailAddress" id="workEmailAddress" placeholder="Email" aria-label="Work email" required
+                  <input type="email" class="form-control" name="email" id="workEmailAddress" placeholder="Email" aria-label="Work email" required
                          data-msg="Please enter a valid email address">
                 </div>
               </div>
 
               <div class="col-sm-6 px-2">
                 <div class="js-form-message form-group">
-                  <label class="sr-only" for="lastNameExample2">Empresa</label>
-                  <input type="text" class="form-control" name="lastNameExample2" id="lastNameExample2" placeholder="Empresa" aria-label="Last name" required
+                  <label class="sr-only" for="lastNameExample2">Teléfono</label>
+                  <input type="text" class="form-control" name="phone" id="lastNameExample2" placeholder="Teléfono" aria-label="Last name" required
                          data-msg="Please enter last your name">
                 </div>
               </div>
@@ -532,13 +532,13 @@
               <div class="col-sm-12 px-2">
                 <div class="js-form-message form-group">
                   <label class="sr-only" for="country">A cobrar</label>
-                  <select class="form-control custom-select" name="country" id="country" required
+                  <select class="form-control custom-select" name="que_necesitas_cobrar_" id="que_necesitas_cobrar_" required
                           data-msg="Please select your country.">
                     <option value="" selected disabled>¿Qué necesitas cobrar?</option>
-                    <option value="FA">Facturas</option>
-                    <option value="CH">Cheques</option>
-                    <option value="PA">Pagarés</option>
-                    <option value="OT">Otros</option>
+                    <option value="Facturas">Facturas</option>
+                    <option value="Cheques">Cheques</option>
+                    <option value="Pagarés">Pagarés</option>
+                    <option value="Otros">Otros</option>
                   </select>
                 </div>
               </div>
@@ -546,7 +546,7 @@
               <div class="col-sm-12 px-2">
                 <div class="js-form-message form-group">
                   <label class="sr-only" for="budget">Monto aproximado</label>
-                  <select class="form-control custom-select" name="budget" id="budget" required
+                  <select class="form-control custom-select" name="cual_es_el_monto_" id="cual_es_el_monto_" required
                           data-msg="Monto">
                     <option value="" selected disabled>Monto aproximado</option>
                     <option value="budget1">Menos de $1.000.000</option>
