@@ -133,9 +133,16 @@ data-hs-header-options='{
 
 <main id="content" role="main">
   
-  <div class="position-relative space-top-2 space-top-lg-3">
-    <div class="space-top-2">
+  <div class="position-relative space-top-2 space-top-lg-2">
+    <div class="space-top-2 gradient-y-overlay-lg-white bg-img-start content-space-2">
       <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="../servicios/index.html">Servicios</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Juicio Civil</li>
+          </ol>
+        </nav>
         <div class="row">
           <div class="col-md-7 col-lg-8">
             <span class="badge badge-pill badge-success mb-3">Servicios</span>
@@ -147,7 +154,8 @@ data-hs-header-options='{
     </div>
     <div class="container space-top-md-2 position-md-absolute top-0 right-0 left-0">
       <div class="row justify-content-end">
-        <div id="stickyBlockStartPoint" class="col-md-5 col-lg-4 space-top-2 space-top-lg-3 position-relative z-index-2" style="">
+        <div class="col-md-5 col-lg-4 space-top-2 space-top-lg-3 position-relative z-index-2">
+        <div id="stickyBlockStartPoint">
           <div class="js-sticky-block card card-bordered" data-hs-sticky-block-options="{
                   &quot;parentSelector&quot;: &quot;#stickyBlockStartPoint&quot;,
                   &quot;breakpoint&quot;: &quot;md&quot;,
@@ -220,6 +228,7 @@ data-hs-header-options='{
           </div>
         </div>
       </div>
+      </div>
     </div>
   </div>
 
@@ -257,100 +266,97 @@ data-hs-header-options='{
             <span class="link-icon ml-1">+</span>
           </a>
 
-        
-        <div class="border-top pt-7 mt-7">
-          <h3 class="mb-4">¿Qué puedes cobrar?</h3>
-          <p>Todo tipo de deuda, contáctanos si tienes resoluciones judiciales o contratos impagos y más.</p>
-          <div class="row mx-n2 mx-lg-n3">
-
-            <article class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0">
-              <div class="card card-bordered card-hover-shadow w-100">
-                <div class="card-body">
-                  <h3 class="mb-3">
-                    <a class="text-dark" tabindex="0">Títulos</a>
-                  </h3>
-                  <span class="d-block font-size-1 text-body mb-1">Facturas, cheques y pagarés</span>
-                </div>
-                <div class="card-footer">
-                  <ul class="list-inline list-separator small text-body">
-                    <li class="list-inline-item">Vencimiento: Mayor a 1 año</li>
-                  </ul>
-                </div>
-              </div>
-            </article>
-
-            <article class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0">
-              <div class="card card-bordered card-hover-shadow w-100">
-                <div class="card-body">
-                  <h3 class="mb-3">
-                    <a class="text-dark" tabindex="0">Deudas</a>
-                  </h3>
-                  <span class="d-block font-size-1 text-body mb-1">Civiles, comerciales y otros</span>
-                </div>
-                <div class="card-footer">
-                  <ul class="list-inline list-separator small text-body">
-                    <li class="list-inline-item">No requiere vencimiento</li>
-                  </ul>
-                </div>
-              </div>
-            </article> 
-
+          <div class="border-top pt-7 mt-7">
+            <h2 class="h3 mb-4">¿Qué puedes cobrar?</h2>
+            <p class="mb-4">Contáctanos si tienes <u>resoluciones judiciales o contratos impagos</u> y más.</p>
+            <div class="row mx-n2 mx-lg-n3">
 
               <article class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0">
                 <div class="card card-bordered card-hover-shadow w-100">
-                <div class="card-body">
-                  <h3 class="mb-3">
-                    <a class="text-dark" tabindex="0">Laboral</a>
-                  </h3>
-                  <span class="d-block font-size-1 text-body mb-1">Despidos, indemnizaciones y más</span>
+                  <div class="card-body">
+                    <h3 class="mb-3">
+                      <a class="text-dark" tabindex="0">Facturas</a>
+                    </h3>
+                    <span class="d-block font-size-1 text-body mb-1">A crédito y aceptadas</span>
+                  </div>
+                  <div class="card-footer">
+                    <ul class="list-inline list-separator small text-body">
+                      <li class="list-inline-item">Vencimiento: Menor a 1 año</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="card-footer">
-                  <ul class="list-inline list-separator small text-body">
-                    <li class="list-inline-item">Vencimiento: Mayor a 1 año</li>
-                  </ul>
+              </article>
+
+              <article class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0">
+                <div class="card card-bordered card-hover-shadow w-100">
+                  <div class="card-body">
+                    <h3 class="mb-3">
+                      <a class="text-dark" tabindex="0">Cheques</a>
+                    </h3>
+                    <span class="d-block font-size-1 text-body mb-1">Con acta de protesto</span>
+                  </div>
+                  <div class="card-footer">
+                    <ul class="list-inline list-separator small text-body">
+                      <li class="list-inline-item">Vencimiento: Menor a 1 año</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </article> 
-
-          </div>
-
-        </div>
+              </article> 
 
 
-        <div class="border-top pt-7 mt-7">
-          <h3 class="mb-4">¿Cuánto puedes cobrar?</h3>
-
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="media text-body font-size-1 mb-3">
-                <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                <div class="media-body">
-                  Monto total adeudado
+                <article class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0">
+                  <div class="card card-bordered card-hover-shadow w-100">
+                  <div class="card-body">
+                    <h3 class="mb-3">
+                      <a class="text-dark" tabindex="0">Pagarés</a>
+                    </h3>
+                    <span class="d-block font-size-1 text-body mb-1">Legalizados en notaría</span>
+                  </div>
+                  <div class="card-footer">
+                    <ul class="list-inline list-separator small text-body">
+                      <li class="list-inline-item">Vencimiento: Menor a 1 año</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="media text-body font-size-1 mb-3">
-                <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                <div class="media-body">
-                  Intereses (12% anual aprox.)
-                </div>
-              </div>
-            </div>
-            </div>
-
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="media text-body font-size-1 mb-3">
-                <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                <div class="media-body">
-                  Notificaciones judiciales ($150.000 aprox.)
-                </div>
-              </div>
+              </article>
             </div>
           </div>
-        </div>
+
+          <div class="border-top pt-7 mt-7">
+            <h2 class="h3 mb-4">¿Cuánto puedes cobrar?</h2>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="media text-body mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Monto total adeudado
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="media text-body mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Intereses (12% anual aprox.)
+                  </div>
+                </div>
+              </div>
+              </div>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="media text-body mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Notificaciones judiciales ($150.000 aprox.)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
       </div>
     </div>
   </div>
@@ -372,7 +378,7 @@ data-hs-header-options='{
               <p>Solo pagas si a ti te pagan, contácta o comienza online.</p>
             </div>
       
-            <h4 class="mb-3">También te podemos ayudar con:</h4>
+            <h3 class="h4 mb-3">También te podemos ayudar con:</h3>
       
             <div class="media text-body mb-3">
               <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
@@ -529,78 +535,6 @@ data-hs-header-options='{
   </div>
 </footer>
   
-
-
-  <!-- ========== SECONDARY CONTENTS ========== -->
-  <!-- Copy to Clipboard Modal -->
-  <div class="modal fade" id="copyToClipboardModal" tabindex="-1" role="dialog" aria-labelledby="copyToClipboardModalTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <!-- Header -->
-        <div class="modal-header">
-          <h4 id="copyToClipboardModalTitle" class="mb-0">Share this course</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <svg aria-hidden="true" class="mb-0" width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-              <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
-            </svg>
-          </button>
-        </div>
-        <!-- End Header -->
-
-        <!-- Body -->
-        <div class="modal-body">
-          <form>
-            <!-- Clipboard -->
-            <div class="input-group mb-4">
-              <input id="copyToClipboard" type="text" class="form-control" value="http://www.front-course.com/share/3874/">
-              <div class="input-group-append">
-                <a class="js-clipboard input-group-text" href="javascript:;"
-                   data-hs-clipboard-options='{
-                     "contentTarget": "#copyToClipboard",
-                     "successText": "Copied!",
-                     "container": "#copyToClipboardModal"
-                   }'>Copy</a>
-              </div>
-            </div>
-            <!-- End Clipboard -->
-          </form>
-
-          <!-- Social Networks -->
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item">
-              <a class="btn btn-xs btn-icon btn-outline-secondary" href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-xs btn-icon btn-outline-secondary" href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-xs btn-icon btn-outline-secondary" href="#">
-                <i class="fab fa-medium-m"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-xs btn-icon btn-outline-secondary" href="#">
-                <i class="fa fa-envelope"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-xs btn-icon btn-outline-secondary" href="#">
-                <i class="fab fa-slack"></i>
-              </a>
-            </li>
-          </ul>
-          <!-- End Social Networks -->
-        </div>
-        <!-- End Body -->
-      </div>
-    </div>
-  </div>
-  <!-- End Copy to Clipboard Modal -->
-  <!-- ========== END SECONDARY CONTENTS ========== -->
 
   <!-- Go to Top -->
   <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
