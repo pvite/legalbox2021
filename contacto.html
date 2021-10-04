@@ -191,85 +191,73 @@
       </div>
     </div>
 
-    <!-- SVG Shape -->
-    <figure class="position-absolute bottom-0 right-0 left-0">
-      <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1921 273">
-        <polygon fill="#fff" points="0,273 1921,273 1921,0 "/>
-      </svg>
-    </figure>
-    <!-- End SVG Shape -->
   </div>
-  <!-- End Hero Section -->
 
-  <!-- Contact Form Section -->
   <div class="container space-2 space-lg-3">
     <!-- Title -->
     <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-      <h2>Tell us about yourself</h2>
-      <p>Whether you have questions or you would just like to say hello, contact us.</p>
+      <h2>O te contactamos</h2>
+      <p>Cuéntanos cómo te podemos ayudar</p>
     </div>
-    <!-- End Title -->
 
     <div class="w-lg-80 mx-auto">
-      <!-- Contacts Form -->
-      <form class="js-validate">
-        <div class="row">
-          <!-- Input -->
-          <div class="col-sm-6 mb-4">
-            <div class="js-form-message">
-              <label class="input-label">Your name</label>
-              <input type="text" class="form-control" name="name" placeholder="Jeff Fisher" aria-label="Jeff Fisher" required
-                      data-msg="Please enter your name.">
-            </div>
-          </div>
-          <!-- End Input -->
-
-          <!-- Input -->
-          <div class="col-sm-6 mb-4">
-            <div class="js-form-message">
-              <label class="input-label">Your email address</label>
-              <input type="email" class="form-control" name="email" placeholder="jackwayley@gmail.com" aria-label="jackwayley@gmail.com" required
-                      data-msg="Please enter a valid email address.">
-            </div>
-          </div>
-          <!-- End Input -->
-
-          <div class="w-100"></div>
-
-          <!-- Input -->
-          <div class="col-sm-6 mb-4">
-            <div class="js-form-message">
-              <label class="input-label">Subject</label>
-              <input type="text" class="form-control" name="subject" placeholder="Web design" aria-label="Web design" required
-                      data-msg="Please enter a subject.">
-            </div>
-          </div>
-          <!-- End Input -->
-
-          <!-- Input -->
-          <div class="col-sm-6 mb-4">
-            <div class="js-form-message">
-              <label class="input-label">Your phone number</label>
-              <input type="number" class="form-control" name="phone" placeholder="1-800-643-4500" aria-label="1-800-643-4500" required
-                      data-msg="Please enter a valid phone number.">
-            </div>
-          </div>
-          <!-- End Input -->
+      <form class="js-validate card shadow-lg mb-4">
+        <div class="card-header border-0 bg-light text-center py-4 px-4 px-md-6">
+          <h2 class="h4 mb-0">Datos de contacto</h2>
         </div>
 
-        <!-- Input -->
-        <div class="js-form-message mb-6">
-          <label class="input-label">How can we help you?</label>
-          <div class="input-group">
-            <textarea class="form-control" rows="4" name="text" placeholder="Hi there, I would like to ..." aria-label="Hi there, I would like to ..." required
-                      data-msg="Please enter a reason."></textarea>
-          </div>
-        </div>
-        <!-- End Input -->
+        <div class="card-body p-4 p-md-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="js-form-message form-group">
+                <label for="firstNameExample1" class="input-label">Nombre</label>
+                <input type="text" class="form-control" name="firstname" id="firstNameExample1" placeholder="Sofía" aria-label="Sofía" required
+                        data-msg="Por favor, ingresa tu nombre completo">
+              </div>
+            </div>
 
-        <div class="text-center">
-          <button type="submit" class="btn btn-primary btn-wide transition-3d-hover mb-4">Submit</button>
-          <p class="small">We'll get back to you in 1-2 business days.</p>
+            <div class="col-sm-6 px-2">
+              <div class="js-form-message form-group">
+                <label for="lastNameExample1" class="input-label">Apellido</label>
+                <input type="text" class="form-control" name="lastname" id="lastNameExample1" placeholder="Gonzalez" aria-label="Gonzalez" required
+                        data-msg="Por favor, ingresa tu apellido">
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <!-- Form Group -->
+              <div class="js-form-message form-group">
+                <label for="workEmailAddress" class="input-label">Email</label>
+                <input type="email" class="form-control" name="email" id="firstNameExample1" placeholder="sofia@empresa.cl" aria-label="Sofía" required
+                        data-msg="Por favor, ingresa tu email de empresa">
+              </div>
+              <!-- End Form Group -->
+            </div>
+
+            <div class="col-sm-6 px-2">
+              <!-- Form Group -->
+              <div class="js-form-message form-group">
+                <label for="phoneLabel" class="input-label">Teléfono</label>
+                <input type="phone" class="form-control" name="phone" id="lastNameExample1" placeholder="9 8809 0687" aria-label="Gonzalez" required
+                        data-msg="Por favor, ingresa tu teléfono">
+              </div>
+              <!-- End Form Group -->
+            </div>
+
+            <div class="col-sm-12">
+              <!-- Form Group -->
+              <div class="js-form-message form-group">
+                <label for="message" class="input-label">Mensaje</label>
+                <div class="input-group">
+                  <textarea class="form-control" rows="4" name="message" id="message" placeholder="Hola, necesito ayuda con..." aria-label="Hola, necesito ayuda con..." required
+                            data-msg="Por favor, escribe un mensaje"></textarea>
+                </div>
+              </div>
+              <!-- End Form Group -->
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-block btn-primary transition-3d-hover">Contactar</button>
         </div>
       </form>
       <!-- End Contacts Form -->

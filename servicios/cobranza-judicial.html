@@ -393,48 +393,67 @@ data-hs-header-options='{
       
           <div class="col-lg-6">
             <div class="ml-lg-5">
+            
               <form class="js-validate card shadow-lg mb-4">
                 <div class="card-header border-0 bg-light text-center py-4 px-4 px-md-6">
                   <h2 class="h4 mb-0">Datos de contacto</h2>
                 </div>
-      
+        
                 <div class="card-body p-4 p-md-6">
                   <div class="row">
                     <div class="col-sm-6">
+                      <!-- Form Group -->
                       <div class="js-form-message form-group">
                         <label for="firstNameExample1" class="input-label">Nombre</label>
-                        <input type="text" class="form-control" name="firstNameExample1" id="firstNameExample1" placeholder="Sofía" aria-label="Sofía" required
-                               data-msg="Please enter first your name">
+                        <input type="text" class="form-control" name="firstname" id="firstNameExample1" placeholder="Sofía" aria-label="Sofía" required
+                                data-msg="Por favor, ingresa tu nombre completo">
                       </div>
+                      <!-- End Form Group -->
                     </div>
-      
-                    <div class="col-sm-6">
+        
+                    <div class="col-sm-6 px-2">
+                      <!-- Form Group -->
                       <div class="js-form-message form-group">
                         <label for="lastNameExample1" class="input-label">Apellido</label>
-                        <input type="text" class="form-control" name="lastNameExample1" id="lastNameExample1" placeholder="Gonzalez" aria-label="Gonzalez" required
-                               data-msg="Please enter last your name">
+                        <input type="text" class="form-control" name="lastname" id="lastNameExample1" placeholder="Gonzalez" aria-label="Gonzalez" required
+                                data-msg="Por favor, ingresa tu apellido">
                       </div>
+                      <!-- End Form Group -->
                     </div>
-      
-                    <div class="col-sm-12">
+        
+                    <div class="col-sm-6">
+                      <!-- Form Group -->
                       <div class="js-form-message form-group">
-                        <label for="emailAddressExample1" class="input-label">Email</label>
-                        <input type="email" class="form-control" name="emailAddressExample1" id="emailAddressExample1" placeholder="sofia@empresa.cl" aria-label="sofia@empresa.cl" required
-                               data-msg="Please enter a valid email address">
+                        <label for="workEmailAddress" class="input-label">Email</label>
+                        <input type="email" class="form-control" name="email" id="firstNameExample1" placeholder="sofia@empresa.cl" aria-label="Sofía" required
+                                data-msg="Por favor, ingresa tu email de empresa">
                       </div>
+                      <!-- End Form Group -->
                     </div>
-      
+        
+                    <div class="col-sm-6 px-2">
+                      <!-- Form Group -->
+                      <div class="js-form-message form-group">
+                        <label for="phoneLabel" class="input-label">Teléfono</label>
+                        <input type="phone" class="form-control" name="phone" id="lastNameExample1" placeholder="9 8809 0687" aria-label="Gonzalez" required
+                                data-msg="Por favor, ingresa tu teléfono">
+                      </div>
+                      <!-- End Form Group -->
+                    </div>
+        
                     <div class="col-sm-12">
+                      <!-- Form Group -->
                       <div class="js-form-message form-group">
                         <label for="message" class="input-label">Mensaje</label>
                         <div class="input-group">
                           <textarea class="form-control" rows="4" name="message" id="message" placeholder="Hola, necesito ayuda con..." aria-label="Hola, necesito ayuda con..." required
-                                    data-msg="Please enter a reason."></textarea>
+                                    data-msg="Por favor, escribe un mensaje"></textarea>
                         </div>
                       </div>
+                      <!-- End Form Group -->
                     </div>
                   </div>
-      
+        
                   <button type="submit" class="btn btn-block btn-primary transition-3d-hover">Contactar</button>
                 </div>
               </form>
