@@ -342,8 +342,6 @@ data-hs-header-options='{
   </div>
 </footer>
 
-
-
   <!-- Go to Top -->
   <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
      data-hs-go-to-options='{
@@ -366,10 +364,10 @@ data-hs-header-options='{
 
 
   <!-- JS Implementing Plugins -->
-  <script src="./assets/js/vendor.min.js"></script>
+  <script src="../assets/js/vendor.min.js"></script>
 
   <!-- JS Front -->
-  <script src="./assets/js/theme.min.js"></script>
+  <script src="../assets/js/theme.min.js"></script>
 
   <!-- JS Plugins Init. -->
   <script>
@@ -381,11 +379,7 @@ data-hs-header-options='{
 
       // INITIALIZATION OF MEGA MENU
       // =======================================================
-      var megaMenu = new HSMegaMenu($('.js-mega-menu'), {
-        desktop: {
-          position: 'left'
-        }
-      }).init();
+      var megaMenu = new HSMegaMenu($('.js-mega-menu')).init();
 
 
       // INITIALIZATION OF UNFOLD
@@ -393,23 +387,24 @@ data-hs-header-options='{
       var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
 
 
-      // INITIALIZATION OF SHOW ANIMATIONS
+      // INITIALIZATION OF FANCYBOX
       // =======================================================
-      $('.js-animation-link').each(function () {
-        var showAnimation = new HSShowAnimation($(this)).init();
+      $('.js-fancybox').each(function () {
+        var fancybox = $.HSCore.components.HSFancyBox.init($(this));
       });
 
 
-      // INITIALIZATION OF FORM VALIDATION
+      // INITIALIZATION OF STICKY BLOCKS
       // =======================================================
-      $('.js-validate').each(function() {
-        $.HSCore.components.HSValidation.init($(this), {
-          rules: {
-            confirmPassword: {
-              equalTo: '#signupPassword'
-            }
-          }
-        });
+      $('.js-sticky-block').each(function () {
+        var stickyBlock = new HSStickyBlock($(this)).init();
+      });
+
+
+      // INITIALIZATION OF CLIPBOARD
+      // =======================================================
+      $('.js-clipboard').each(function() {
+        var clipboard = $.HSCore.components.HSClipboard.init(this);
       });
 
 
@@ -423,12 +418,11 @@ data-hs-header-options='{
 
   <!-- IE Support -->
   <script>
-    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="./assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="../assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
   </script>
 
-  
     <!-- Start of HubSpot Embed Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7460005.js"></script>
-    <!-- End of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7460005.js"></script>
+<!-- End of HubSpot Embed Code -->
 </body>
 </html>
