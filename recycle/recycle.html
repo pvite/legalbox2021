@@ -1,0 +1,146 @@
+<!-- FORMULARIO DE CONTACTO HOME:  -->
+
+<div class="mx-3 mx-xl-10 space-bottom-4" style="background-image: url(../assets/svg/components/abstract-shapes-20.svg);">
+    <div class="bg-primary rounded-lg container-xl container-fluid space-1 space-md-2 px-4 px-md-8 px-lg-10">
+      <div class="row justify-content-lg-between align-items-lg-center">
+        <div class="col-md-10 col-lg-5 mb-9 mb-lg-0">
+          <h1 class="text-white">Prueba Legalbox</h1>
+          <p class="text-white-70">Por abogados expertos - sin trámites</p>
+  
+          <div class="w-50">
+            <hr class="opacity-xs my-5">
+          </div>
+  
+          <div id="testimonialsNavMain" class="js-slick-carousel slick mb-4"
+               data-hs-slick-carousel-options='{
+                 "autoplay": true,
+                 "autoplaySpeed": 5000,
+                 "fade": true,
+                 "infinite": true,
+                 "asNavFor": "#testimonialsNavPagination"
+               }'>
+            <div class="js-slide">
+              <blockquote class="h3 text-white font-weight-normal mb-4"><em>"Abogados serios y ejecutivos. Muy buen servicio"</em></blockquote>
+              <span class="h5 text-white">Max Figueroa</span>
+              <small class="d-block text-white-70">Socio, Figueroa</small>
+            </div>
+  
+            <div class="js-slide">
+              <blockquote class="h3 text-white font-weight-normal mb-4"><em>"Abogados serios y ejecutivos. Muy buen servicio"</em></blockquote>
+              <span class="h5 text-white">Max Figueroa</span>
+              <small class="d-block text-white-70">Socio, Figueroa</small>
+            </div>
+  
+            <div class="js-slide">
+              <blockquote class="h3 text-white font-weight-normal mb-4"><em>"Abogados serios y ejecutivos. Muy buen servicio"</em></blockquote>
+              <span class="h5 text-white">Max Figueroa</span>
+              <small class="d-block text-white-70">Socio, Figueroa</small>
+            </div>
+          </div>
+  
+          <div id="testimonialsNavPagination" class="js-slick-carousel slick slick-transform-off slick-pagination-modern"
+               data-hs-slick-carousel-options='{
+                 "infinite": true,
+                 "slidesToShow": 3,
+                 "centerMode": true,
+                 "isThumbs": true,
+                 "asNavFor": "#testimonialsNavMain"
+               }'>
+            <div class="js-slide">
+              <div class="avatar avatar-circle">
+                <img class="avatar-img" src="../assets/img/100x100/img1.jpg" alt="Image Description">
+              </div>
+            </div>
+  
+            <div class="js-slide">
+              <div class="avatar avatar-circle">
+                <img class="avatar-img" src="../assets/img/100x100/img3.jpg" alt="Image Description">
+              </div>
+            </div>
+  
+            <div class="js-slide">
+              <div class="avatar avatar-circle">
+                <img class="avatar-img" src="../assets/img/100x100/img2.jpg" alt="Image Description">
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-6">
+          <form class="js-validate card shadow-lg" action="/gracias.html"> 
+            <div class="card-body p-4 p-md-7">
+              <div class="mb-4">
+                <h2 class="h3">Te contactaremos lo antes posible</h2>
+              </div>
+  
+              <div class="row mx-n2 mb-5">
+                <div class="col-sm-6 px-2">
+                  <div class="js-form-message form-group">
+                    <label class="sr-only" for="firstNameExample2">Nombre</label>
+                    <input type="text" class="form-control" name="firstname" id="firstNameExample2" placeholder="Nombre" aria-label="First name" required
+                           data-msg="Por favor, ingresa tu nombre">
+                  </div>
+                </div>
+  
+                <div class="col-sm-6 px-2">
+                  <div class="js-form-message form-group">
+                    <label class="sr-only" for="lastNameExample2">Apellido</label>
+                    <input type="text" class="form-control" name="lastname" id="lastNameExample2" placeholder="Apellido" aria-label="Last name" required
+                           data-msg="Por favor, ingresa tu apellido">
+                  </div>
+                </div>
+  
+                <div class="col-sm-6 px-2">
+                  <div class="js-form-message form-group">
+                    <label class="sr-only" for="workEmailAddress">Email</label>
+                    <input type="email" class="form-control" name="email" id="workEmailAddress" placeholder="Email" aria-label="Work email" required
+                           data-msg="Por favor, ingresa un correo válido">
+                  </div>
+                </div>
+  
+                <div class="col-sm-6 px-2">
+                  <div class="js-form-message form-group">
+                    <label class="sr-only" for="phoneLabel">Teléfono</label>
+                    <input type="phone" class="form-control" name="phone" id="lastNameExample2" placeholder="Teléfono" aria-label="Last name" required
+                           data-msg="Por favor, ingresa tu número de teléfono">
+                  </div>
+                </div>
+  
+                <div class="col-sm-12 px-2">
+                  <div class="js-form-message form-group">
+                    <label class="sr-only" for="country">A cobrar</label>
+                    <select class="form-control custom-select" name="que_necesitas_cobrar_" id="que_necesitas_cobrar_" required
+                            data-msg="Por favor, selecciona el tipo de documento que necesitas cobrar">
+                      <option value="" selected disabled>¿Qué necesitas cobrar?</option>
+                      <option value="Facturas">Facturas</option>
+                      <option value="Cheques">Cheques</option>
+                      <option value="Pagarés">Pagarés</option>
+                      <option value="Otros">Otros</option>
+                    </select>
+                  </div>
+                </div>
+  
+                <div class="col-sm-12 px-2">
+                  <div class="js-form-message form-group">
+                    <label class="sr-only" for="budget">Monto aproximado</label>
+                    <select class="form-control custom-select" name="cual_es_el_monto_" id="cual_es_el_monto_" required
+                            data-msg="¿Cual es el monto que necesitas cobrar?">
+                      <option value="" selected disabled>Monto aproximado</option>
+                      <option value="budget1">Menos de $1.000.000</option>
+                      <option value="budget1">Entre $1.000.0000 y $5.000.000</option>
+                      <option value="budget1">Entre $5.000.0000 y $20.000.000</option>
+                      <option value="budget1">Entre $20.000.0000 y $100.000.000</option>
+                      <option value="budget2">Más de $100.000.000</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-block btn-primary">Contactar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORMULARIO DE CONTACTO HOME:  -->
