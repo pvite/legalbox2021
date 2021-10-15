@@ -1,8 +1,7 @@
 Sitemap: https://www.legalbox.cl/sitemap.xml
 
 User-agent: Googlebot
-Disallow: /gracias
-
+Disallow: /dis/*
 
 User-agent: *
 Allow: /*
