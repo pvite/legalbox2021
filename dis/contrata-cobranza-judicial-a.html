@@ -36,23 +36,6 @@ data-hs-header-options='{
 <div class="d-flex align-items-center">
 
 
-<div class="ml-auto">
-<div class="hs-unfold d-sm-none mr-2">
-  <a class="js-hs-unfold-invoker dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;"
-      data-hs-unfold-options='{
-        "target": "#jumpToDropdown",
-        "type": "css-animation",
-        "event": "hover",
-        "hideOnScroll": "true"
-        }'>
-    Saltar
-  </a>
-
-  <div id="jumpToDropdown" class="hs-unfold-content dropdown-menu">
-    <a class="dropdown-item" href="../precios">Ver precios</a>
-    <a class="dropdown-item" href="../contacto">Contactar</a>
-  </div>
-</div>
 </div>
 </div>
 </div>
@@ -144,9 +127,22 @@ data-hs-header-options='{
 
   <div class="container position-relative z-index-4 space-top-3 space-top-md-4 space-top-lg-4">
     <div class="row justify-content-lg-between align-items-lg-center">
-      <div class="col-md-10 col-lg-5 mb-9 mb-lg-0">
+      <div class="col-md-10 col-lg-6 mb-9 mb-lg-0">
         <div class="mb-7">
-          <h1 class="display-4 mb-4">Cobranza judicial <span class="text-primary text-highlight-success"> online</span></h1>
+          <h1 class="display-4 mb-4">Cobranza
+            <br>judicial de 
+            <br>            
+            <span class="text-primary font-weight-bold">
+              <span class="js-text-animation"
+                    data-hs-typed-options='{
+                      "strings": ["facturas", "pagarés", "cheques","y más"],
+                      "typeSpeed": 60,
+                      "loop": true,
+                      "backSpeed": 25,
+                      "backDelay": 1500
+                    }'></span>
+            </span>
+          </h1>
           <p class="lead">Por abogados expertos - sin trámites</p>
         </div>
 
@@ -381,6 +377,29 @@ data-hs-header-options='{
   <!-- End Go to Top -->
 
 
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+     data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": 15
+         },
+         "show": {
+           "bottom": 15
+         },
+         "hide": {
+           "bottom": -15
+         }
+       }
+     }'>
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <!-- End Go to Top -->
+
+
   <!-- JS Implementing Plugins -->
   <script src="../assets/js/vendor.min.js"></script>
 
@@ -397,12 +416,16 @@ data-hs-header-options='{
 
       // INITIALIZATION OF MEGA MENU
       // =======================================================
-      var megaMenu = new HSMegaMenu($('.js-mega-menu')).init();
+      var megaMenu = new HSMegaMenu($('.js-mega-menu'), {
+        desktop: {
+          position: 'left'
+        }
+      }).init();
 
 
-      // INITIALIZATION OF UNFOLD
+      // INITIALIZATION OF TEXT ANIMATION (TYPING)
       // =======================================================
-      var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+      var typed = $.HSCore.components.HSTyped.init(".js-text-animation");
 
 
       // INITIALIZATION OF FANCYBOX
@@ -412,17 +435,11 @@ data-hs-header-options='{
       });
 
 
-      // INITIALIZATION OF STICKY BLOCKS
+      // INITIALIZATION OF AOS
       // =======================================================
-      $('.js-sticky-block').each(function () {
-        var stickyBlock = new HSStickyBlock($(this)).init();
-      });
-
-
-      // INITIALIZATION OF CLIPBOARD
-      // =======================================================
-      $('.js-clipboard').each(function() {
-        var clipboard = $.HSCore.components.HSClipboard.init(this);
+      AOS.init({
+        duration: 650,
+        once: true
       });
 
 
@@ -436,8 +453,7 @@ data-hs-header-options='{
 
   <!-- IE Support -->
   <script>
-    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="../assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="./assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
   </script>
-
 </body>
 </html>
