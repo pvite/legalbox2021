@@ -1,0 +1,1019 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Title -->
+    <title>Software de Gestión de Cobranza Judicial - Legalbox</title>
+    
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="shortcut icon" href="../assets/svg/logos/Legalbox-isotipo.svg">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    
+    <link rel="stylesheet" href="../assets/css/vendor.css">
+    </head>
+<body>
+
+
+<header id="header" class="header header-box-shadow-on-scroll header-abs-top header-bg-transparent header-show-hide"
+data-hs-header-options='{
+"fixMoment": 1000,
+"fixEffect": "slide"
+}'>
+
+<div class="header-section">
+<div class="container header-hide-content pt-2">
+<div class="d-flex align-items-center">
+
+
+<div class="ml-auto">
+
+</div>
+</div>
+</div>
+
+<div id="logoAndNav" class="container">
+<nav class="js-mega-menu navbar navbar-expand-lg">
+    <a class="navbar-brand" href="../" aria-label="Legalbox">
+    <img src="../assets/svg/logos/legalbox_logo.svg" alt="Logo">
+</a>
+
+<button type="button" class="navbar-toggler btn btn-icon btn-sm rounded-circle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="navBar"
+        data-toggle="collapse"
+        data-target="#navBar">
+<span class="navbar-toggler-default">
+    <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"/>
+    </svg>
+</span>
+<span class="navbar-toggler-toggled">
+    <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+    </svg>
+</span>
+</button>
+
+<div id="navBar" class="collapse navbar-collapse">
+<div class="navbar-body header-abs-top-inner">
+    <ul class="navbar-nav">
+
+    <li class="hs-has-sub-menu navbar-nav-item">
+        <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle " href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Servicios</a>
+
+        <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;">
+        <div class="hs-has-sub-menu">
+            <a id="navLinkPagesAccount" class="hs-mega-menu-invoker dropdown-item dropdown-item-toggle " href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesAccount">Cobranza <span class="badge badge-success badge-pill ml-2">Online</span></a>
+
+            <div id="navSubmenuPagesAccount" class="hs-sub-menu dropdown-menu" aria-labelledby="navLinkPagesAccount" style="min-width: 230px;">
+            <a class="dropdown-item " href="../servicios/cobranza-judicial">Cobranza Judicial</a>
+            <a class="dropdown-item " href="../servicios/cobranza-judicial-prejudicial">Cobranza Prejudicial</a>
+            <a class="dropdown-item " href="../servicios/juicio-civil-cobro">Juicio Civil de Cobro</a>
+            </div>
+        </div>
+
+        <div class="hs-has-sub-menu">
+            <a id="navLinkPagesAccount" class="hs-mega-menu-invoker dropdown-item dropdown-item-toggle " href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesAccount">Incobrables</a>
+
+            <div id="navSubmenuPagesAccount" class="hs-sub-menu dropdown-menu" aria-labelledby="navLinkPagesAccount" style="min-width: 230px;">
+            <a class="dropdown-item " href="../servicios/certificado-incobrabilidad">Certificado Incobrabilidad</a>
+            <a class="dropdown-item " href="../servicios/recupera-iva">Recuperar IVA</a>
+            </div>
+        </div>
+
+        </div>
+    </li>
+
+    <li class="hs-has-sub-menu navbar-nav-item">
+        <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle " href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="blogSubMenu">Recursos</a>
+
+        <div id="blogSubMenu" class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg fadeOut animated" aria-labelledby="blogMegaMenu" style="min-width: 230px; display: none; animation-duration: 300ms;">
+        <a class="dropdown-item " href="../recursos/index">Guías y Artículos</a>
+        <a class="dropdown-item " href="../recursos/preguntas-frecuentes">Preguntas Frecuentes</a>
+        </div>
+    </li>
+
+    <li class="navbar-nav-item">
+        <a class="nav-link" href="../precios">Precios</a>
+    </li> 
+
+    <li class="navbar-nav-item">
+        <a class="nav-link" href="../contacto.html">Contactar</a>
+    </li> 
+
+    <li class="navbar-nav-last-item">
+        <a class="btn btn-sm btn-outline-primary transition-3d-hover mr-2" href="https://app.legalbox.cl/login">Inicia Sesión</a>
+        <a class="btn btn-sm btn-primary transition-3d-hover" href="https://app.legalbox.cl/signup">Comenzar</a>
+    </li>
+    </ul>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</header>   
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Hero Section -->
+    <div class="position-relative bg-white overflow-hidden">
+      <div class="container position-relative z-index-2 space-top-3 space-top-lg-4 space-bottom-2 space-bottom-md-3">
+        <div class="row align-items-lg-center">
+          <div class="col-lg-5 mb-5 mb-lg-0">
+            <!-- Info -->
+            <div class="mb-6">
+              <h1 class="text-white mb-3">
+                Software legal para gestionar cobranzas judiciales y más
+              </h1>
+              <p class="text-white-70">Optimice la tasa de morosidad e incobrables de sus operaciones - Por abogados</p>
+            </div>
+
+            <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4" href="#">Contactar</a>
+            <a class="btn btn-indigo btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0" href="#">Comenzar</a>
+            <!-- End Info -->
+          </div>
+
+          <div class="col-lg-7">
+            <div class="position-relative">
+              <!-- Device Mockup -->
+              <div class="device d-none d-sm-block mb-3 mb-sm-0" data-aos="fade-up">
+                <img class="img-fluid" src="../assets/svg/components/macbook.svg" alt="Image Description">
+                <img class="device-macbook-screen" src="../assets/img/1618x1010/img3.jpg" alt="Image Description">
+              </div>
+              <!-- End Device Mockup -->
+
+              <!-- Card Info -->
+              <div class="position-sm-absolute bottom-0 right-0 max-w-sm-40rem mx-auto ml-sm-auto mb-sm-n5" data-aos="fade-up" data-aos-delay="100">
+                <div class="card bg-indigo">
+                  <div class="card-body">
+                    <h2 class="h5 text-white mb-3">Sin trámites</h2>
+
+                    <p class="text-info">Front lets you spend your development time on product improvements.</p>
+
+                    <!-- Avatar -->
+                    <div class="media align-items-center">
+                      <div class="avatar avatar-xs avatar-circle mr-2">
+                        <img class="avatar-img" src="./assets/img/100x100/img3.jpg" alt="Image Description">
+                      </div>
+                      <div class="media-body">
+                        <h3 class="font-size-1 text-white mb-0">Raphael Olston</h3>
+                        <small class="d-block text-light">Business</small>
+                      </div>
+                    </div>
+                    <!-- End Avatar -->
+                  </div>
+                </div>
+              </div>
+              <!-- Enc Card Info -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SVG Shape -->
+      <div class="bg-primary position-absolute top-0 right-0 bottom-0 left-0"></div>
+
+      <figure class="d-none d-md-block position-absolute" style="top: 0rem; left: 40rem; width: 62rem; height: 62rem;">
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 260 260">
+          <circle fill="#1818EF" opacity=".1" cx="130" cy="130" r="130"/>
+        </svg>
+      </figure>
+      <figure class="d-none d-md-block position-absolute" style="top: 8rem; left: 40rem; width: 62rem; height: 62rem;">
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 260 260">
+          <circle fill="#A612DD" opacity=".1" cx="130" cy="130" r="130"/>
+        </svg>
+      </figure>
+      <figure class="d-none d-md-block position-absolute" style="top: 5rem; left: -10rem; width: 62rem; height: 62rem;">
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 260 260">
+          <circle fill="#1919CC" opacity=".1" cx="130" cy="130" r="130"/>
+        </svg>
+      </figure>
+      <figure class="d-none d-md-block position-absolute" style="top: -5rem; left: -10rem; width: 75rem; height: 62rem;">
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 260 260">
+          <circle fill="#1818EF" opacity=".1" cx="130" cy="130" r="130"/>
+        </svg>
+      </figure>
+
+      <figure class="position-absolute bottom-0 right-0 left-0">
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1921 273">
+          <polygon fill="#fff" points="0,273 1921,273 1921,0 "/>
+        </svg>
+      </figure>
+      <!-- End SVG Shape -->
+    </div>
+    <!-- End Hero Section -->
+
+    <!-- Features Section -->
+    <div class="container space-2 space-top-lg-3">
+      <div class="row justify-content-lg-between align-items-lg-center">
+        <div class="col-lg-5 mb-9 mb-lg-0">
+          <div class="mb-5">
+            <h2>Gestión judicial de cobranza</h2>
+            <p>Cobranza prejudicial, judicial y civil para el cobro de títulos ejecutivos impagos - Sin trámites</p>
+          </div>
+
+          <div class="w-md-50 w-lg-80 mb-2">
+            <!-- Fancybox -->
+            <div class="bg-img-hero text-center rounded-lg py-11 px-5" style="background-image: url(./assets/img/480x320/img18.jpg);">
+              <a class="js-fancybox video-player video-player-btn d-flex justify-content-center align-items-center" href="javascript:;"
+                 data-hs-fancybox-options='{
+                   "src": "//vimeo.com/167434033",
+                   "caption": "Front - Responsive Website Template",
+                   "speed": 700,
+                   "buttons": ["fullScreen", "close"],
+                   "vimeo": {
+                     "autoplay": 1
+                   }
+                 }'>
+                <span class="video-player-icon">
+                  <i class="fas fa-play"></i>
+                </span>
+              </a>
+            </div>
+            <!-- End Fancybox -->
+          </div>
+
+          <p class="small">See how to send money with Front Pay.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="position-relative max-w-50rem mx-auto" data-aos="fade-up">
+            <!-- Device Mockup -->
+            <div class="device device-iphone-x w-75 mx-auto">
+              <img class="device-iphone-x-frame" src="./assets/svg/components/iphone-x.svg" alt="Image Description">
+              <img class="device-iphone-x-screen" src="./assets/img/407x867/img8.jpg" alt="Image Description">
+            </div>
+            <!-- End Device Mockup -->
+
+            <!-- SVG Component -->
+            <div class="position-absolute bottom-0 right-0 max-w-50rem w-100 z-index-n1 mx-auto">
+              <img class="img-fluid" src="./assets/svg/components/abstract-shapes-2.svg" alt="Image Description">
+            </div>
+            <!-- End SVG Component -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Features Section -->
+
+    <!-- Features Section -->
+    <div class="container space-top-lg-3 space-bottom-lg-2">
+      <div class="row justify-content-lg-between align-items-lg-center">
+        <div class="col-lg-5 order-lg-2 mb-9 mb-lg-0">
+          <div class="mb-5">
+            <h2>Orientado a resultados</h2>
+            <p>Obtenga un partner legal de cobranza con incentivos a maximizar el cobro y su eficiencia.</p>
+          </div>
+          <h4 class="mb-4">Sólo una comisión del total cobrado</h4>
+          <button type="button" class="btn btn-pill btn-outline-primary">Ver Precios</button>
+        </div>
+
+        <div class="col-lg-6 order-lg-1">
+          <div class="position-relative max-w-50rem mx-auto" data-aos="fade-up">
+            <!-- Device Mockup -->
+            <div class="device device-iphone-x w-75 mx-auto">
+              <img class="device-iphone-x-frame" src="./assets/svg/components/iphone-x.svg" alt="Image Description">
+              <img class="device-iphone-x-screen" src="./assets/img/407x867/img9.jpg" alt="Image Description">
+            </div>
+            <!-- End Device Mockup -->
+
+            <!-- SVG Component -->
+            <div class="position-absolute bottom-0 right-0 max-w-50rem w-100 z-index-n1 mx-auto">
+              <img class="img-fluid" src="./assets/svg/components/abstract-shapes-3.svg" alt="Image Description">
+            </div>
+            <!-- End SVG Component -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Features Section -->
+
+    <!-- Features Section -->
+    <div class="container space-top-2 space-top-lg-3 space-bottom-lg-2">
+      <div class="row justify-content-lg-between align-items-lg-center">
+        <div class="col-lg-5 mb-9 mb-lg-0">
+          <div class="mb-4">
+            <h2>Con avances en tiempo real</h2>
+            <p>El primer software legal de cobranza que le muestra el estado de avance de manera transparente.</p>
+          </div>
+
+          <div class="media">
+            <span class="icon icon-xs icon-indigo icon-circle mt-1 mr-3">
+              <i class="fas fa-check fa-xs"></i>
+            </span>
+            <div class="media-body">
+              <p>Trámites y resoluciones judiciales en tiempo real.</p>
+            </div>
+          </div>
+          <div class="media">
+            <span class="icon icon-xs icon-indigo icon-circle mt-1 mr-3">
+              <i class="fas fa-check fa-xs"></i>
+            </span>
+            <div class="media-body">
+              <p>Gastos de notificación transparentados.</p>
+            </div>
+          </div>
+          <div class="media">
+            <span class="icon icon-xs icon-indigo icon-circle mt-1 mr-3">
+              <i class="fas fa-check fa-xs"></i>
+            </span>
+            <div class="media-body">
+              <p>Acepte o rechace convenios de pago.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="position-relative max-w-50rem mx-auto" data-aos="fade-up">
+            <!-- Device Mockup -->
+            <div class="device device-iphone-x w-75 mx-auto">
+              <img class="device-iphone-x-frame" src="./assets/svg/components/iphone-x.svg" alt="Image Description">
+              <img class="device-iphone-x-screen" src="./assets/img/407x867/img1.jpg" alt="Image Description">
+            </div>
+            <!-- End Device Mockup -->
+
+            <!-- SVG Component -->
+            <div class="position-absolute bottom-0 right-0 max-w-50rem w-100 z-index-n1 mx-auto">
+              <img class="img-fluid" src="./assets/svg/components/abstract-shapes-4.svg" alt="Image Description">
+            </div>
+            <!-- End SVG Component -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Features Section -->
+
+    <!-- Pricing Section -->
+<div class="overflow-hidden space-2 space-lg-3">
+    <div class="container pb-4">
+      <!-- Title -->
+      <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9">
+        <h2 class="h1">Precios con incentivos a la eficiencia</h2>
+        <p>Legalbox cobra un % del total cobrado al deudor</p>
+      </div>
+      <!-- End Title -->
+  
+  
+      <div class="row mx-lg-5">
+        <div class="col-sm-6 col-lg-4 px-lg-5 mb-5">
+          <!-- Pricing -->
+          <div class="card shadow-none h-100">
+            <div class="card-header text-center">
+                <div class="mb-2">
+                  <span class="fs-5 align-top text-dark fw-semi-bold">$</span>
+                  <span class="fs-1 text-dark fw-semi-bold">19</span>
+                  <span>/mo</span>
+                </div>
+    
+                <h3 class="card-title">Professional</h3>
+                <p class="card-text">All the basics for starting a new business</p>
+              </div>
+  
+            <div class="card-body">
+                <div class="media font-size-1 mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Cobranza judicial
+                  </div>
+                </div>
+                <div class="media font-size-1 mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Sin costo inicial
+                  </div>
+                </div>
+                <div class="media font-size-1 mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Cuenta gratis
+                  </div>
+                </div>
+                <div class="media font-size-1 mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Reportes en línea
+                  </div>
+                </div>
+              </div>
+  
+            <div class="card-footer border-0">
+              <button type="button" class="btn btn-soft-primary btn-block transition-3d-hover">Get Started</button>
+            </div>
+          </div>
+          <!-- End Pricing -->
+        </div>
+  
+        <div class="col-sm-6 col-lg-4 px-lg-5 mb-5">
+          <!-- Pricing -->
+          <div class="position-relative">
+            <div class="card shadow-lg h-100">
+              <!-- Header -->
+              <div class="card-header border-0 text-center">
+                <span class="h3 mb-0">Judicial+</span>
+                <span class="d-block">
+                  <span class="font-size-4 text-primary font-weight-bold">
+                    <span class="mr-n2">10</span>
+               
+                  </span>
+                  <span class="font-size-1">/ mon</span>
+                </span>
+              </div>
+              <!-- End Header -->
+  
+              <!-- Body -->
+              <div class="card-body">
+                <div class="media font-size-1 mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    3 User
+                  </div>
+                </div>
+                <div class="media font-size-1 mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Front plan features
+                  </div>
+                </div>
+                <div class="media font-size-1 mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    3 apps
+                  </div>
+                </div>
+                <div class="media font-size-1 mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Integrations
+                  </div>
+                </div>
+                <div class="media font-size-1 mb-3">
+                  <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                  <div class="media-body">
+                    Product Support
+                  </div>
+                </div>
+              </div>
+              <!-- End Body -->
+  
+              <div class="card-footer border-0">
+                <button type="button" class="btn btn-soft-primary btn-block transition-3d-hover">Get Started</button>
+              </div>
+            </div>
+  
+            <!-- SVG Elements -->
+            <figure class="max-w-19rem w-100 position-absolute bottom-0 left-0 z-index-n1">
+              <div class="mb-n7 ml-n7">
+                <img class="img-fluid" src="../assets/svg/components/dots-1.svg" alt="Image Description">
+              </div>
+            </figure>
+            <figure class="max-w-15rem w-100 position-absolute top-0 right-0 z-index-n1">
+              <div class="mt-n7 mr-n7">
+                <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 260 260" xml:space="preserve">
+                  <circle fill="#ffc107" cx="130" cy="130" r="130"/>
+                </svg>
+              </div>
+            </figure>
+            <!-- End SVG Elements -->
+          </div>
+          <!-- End Pricing -->
+        </div>
+  
+        <div class="col-sm-6 col-lg-4 px-lg-5 mb-5">
+          <!-- Pricing -->
+          <div class="card shadow-none h-100">
+            <!-- Header -->
+            <div class="card-header text-center">
+                <span class="d-block h3">Judicial</span>
+                <span class="d-block mb-2">
+                  <span class="font-size-4 text-dark font-weight-bold mr-n2">
+                    10
+                  </span>
+                  <span class="font-size-1">%</span>
+                </span>
+              </div>
+            <!-- End Header -->
+  
+            <!-- Body -->
+            <div class="card-body">
+              <div class="media font-size-1 text-body mb-3">
+                <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                <div class="media-body">
+                  5 User
+                </div>
+              </div>
+              <div class="media font-size-1 text-body mb-3">
+                <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                <div class="media-body">
+                  Front plan features
+                </div>
+              </div>
+              <div class="media font-size-1 text-body mb-3">
+                <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                <div class="media-body">
+                  All apps
+                </div>
+              </div>
+              <div class="media font-size-1 text-body mb-3">
+                <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                <div class="media-body">
+                  Integrations
+                </div>
+              </div>
+              <div class="media font-size-1 text-body mb-3">
+                <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                <div class="media-body">
+                  Product Support
+                </div>
+              </div>
+            </div>
+            <!-- End Body -->
+  
+            <div class="card-footer border-0">
+              <button type="button" class="btn btn-soft-primary btn-block transition-3d-hover">Get Started</button>
+            </div>
+          </div>
+          <!-- End Pricing -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Pricing Section -->
+
+    <!-- Testimonials Section -->
+    <div class="border-top">
+      <div class="container space-2 space-top-lg-3">
+        <!-- Title -->
+        <div class="w-lg-50 mb-5 mb-md-9">
+          <h2>Loved by business and individuals across the globe.</h2>
+        </div>
+        <!-- End Title -->
+
+        <!-- Testimonials -->
+        <div class="card-deck d-block d-lg-flex card-lg-gutters-2">
+          <!-- Testimonials -->
+          <div class="card shadow-none bg-transparent">
+            <div class="card-body">
+              <ul class="list-inline text-warning small">
+                <li class="list-inline-item mx-0">
+                  <i class="fas fa-star"></i>
+                </li>
+                <li class="list-inline-item mx-0">
+                  <i class="fas fa-star"></i>
+                </li>
+                <li class="list-inline-item mx-0">
+                  <i class="fas fa-star"></i>
+                </li>
+                <li class="list-inline-item mx-0">
+                  <i class="fas fa-star"></i>
+                </li>
+                <li class="list-inline-item mx-0">
+                  <i class="fas fa-star"></i>
+                </li>
+              </ul>
+              <div class="mb-auto">
+                <p class="mb-0">With Front Pay, you can check out across the web and in apps without having to enter any payment information.</p>
+              </div>
+            </div>
+
+            <div class="card-footer border-0 bg-transparent pt-0 px-5 pb-5">
+              <div class="media">
+                <div class="avatar avatar-circle mr-3">
+                  <img class="avatar-img" src="./assets/img/100x100/img2.jpg" alt="Image Description">
+                </div>
+                <div class="media-body">
+                  <h4 class="mb-1">Christina Kray</h4>
+                  <small class="d-block text-body">Business Manager</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Testimonials -->
+
+          <!-- Testimonials -->
+          <div class="card bg-primary text-white shadow-primary-lg">
+            <div class="card-body">
+              <ul class="list-inline text-warning small">
+                <li class="list-inline-item mx-0">
+                  <i class="fas fa-star"></i>
+                </li>
+                <li class="list-inline-item mx-0">
+                  <i class="fas fa-star"></i>
+                </li>
+                <li class="list-inline-item mx-0">
+                  <i class="fas fa-star"></i>
+                </li>
+                <li class="list-inline-item mx-0">
+                  <i class="fas fa-star"></i>
+                </li>
+                <li class="list-inline-item mx-0">
+                  <i class="fas fa-star"></i>
+                </li>
+              </ul>
+              <div class="mb-auto">
+                <p class="text-white mb-0">From boarding passes to transit and movie tickets, there's pretty much nothing you can't store with Front Pay.</p>
+              </div>
+            </div>
+
+            <div class="card-footer border-0 bg-primary text-white pt-0 px-5 pb-5">
+              <div class="media">
+                <div class="avatar avatar-circle mr-3">
+                  <img class="avatar-img" src="./assets/img/100x100/img11.jpg" alt="Image Description">
+                </div>
+                <div class="media-body">
+                  <h4 class="text-white mb-1">Massalha Shady</h4>
+                  <small class="d-block text-light">CEO at Slack</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Testimonials -->
+
+          <!-- Testimonials -->
+          <div class="card shadow-none bg-transparent">
+            <div class="card-body">
+              <ul class="list-inline text-warning small">
+                <li class="list-inline-item mx-0">
+                  <i class="fas fa-star"></i>
+                </li>
+                <li class="list-inline-item mx-0">
+                  <i class="fas fa-star"></i>
+                </li>
+                <li class="list-inline-item mx-0">
+                  <i class="fas fa-star"></i>
+                </li>
+                <li class="list-inline-item mx-0">
+                  <i class="fas fa-star"></i>
+                </li>
+                <li class="list-inline-item mx-0">
+                  <i class="fas fa-star"></i>
+                </li>
+              </ul>
+              <div class="mb-auto">
+                <p class="mb-0">I love Front Pay for cash back, reward points and fraud protection – just like when you're swiping your card.</p>
+              </div>
+            </div>
+
+            <div class="card-footer border-0 bg-transparent pt-0 px-5 pb-5">
+              <div class="media">
+                <div class="avatar avatar-circle mr-3">
+                  <img class="avatar-img" src="./assets/img/100x100/img4.jpg" alt="Image Description">
+                </div>
+                <div class="media-body">
+                  <h4 class="mb-1">Mark McManus</h4>
+                  <small class="d-block text-body">Front Pay user</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Testimonials -->
+        </div>
+        <!-- End Testimonials -->
+      </div>
+    </div>
+    <!-- End Testimonials Section -->
+
+    <!-- Clients Section -->
+    <div class="container">
+      <div class="row align-items-lg-center">
+        <div class="col-md-7 col-lg-8 mb-5 mb-md-0">
+          <!-- Clients -->
+          <div class="row justify-content-center border-top space-top-2">
+            <div class="col-4 col-lg-2 mb-4 mb-lg-0">
+              <div class="mx-2">
+                <img class="max-w-11rem max-w-md-13rem mx-auto" src="./assets/svg/clients-logo/slack.svg" alt="Image Description">
+              </div>
+            </div>
+            <div class="col-4 col-lg-2 mb-4 mb-lg-0">
+              <div class="mx-2">
+                <img class="max-w-11rem max-w-md-13rem mx-auto" src="./assets/svg/clients-logo/google.svg" alt="Image Description">
+              </div>
+            </div>
+            <div class="col-4 col-lg-2 mb-4 mb-lg-0">
+              <div class="mx-2">
+                <img class="max-w-11rem max-w-md-13rem mx-auto" src="./assets/svg/clients-logo/spotify.svg" alt="Image Description">
+              </div>
+            </div>
+            <div class="col-4 col-lg-2 mb-4 mb-lg-0">
+              <div class="mx-2">
+                <img class="max-w-11rem max-w-md-13rem mx-auto" src="./assets/svg/clients-logo/airbnb.svg" alt="Image Description">
+              </div>
+            </div>
+            <div class="col-4 col-lg-2 mb-4 mb-lg-0">
+              <div class="mx-2">
+                <img class="max-w-11rem max-w-md-13rem mx-auto" src="./assets/svg/clients-logo/shopify.svg" alt="Image Description">
+              </div>
+            </div>
+            <div class="col-4 col-lg-2 mb-4 mb-lg-0">
+              <div class="mx-2">
+                <img class="max-w-11rem max-w-md-13rem mx-auto" src="./assets/svg/clients-logo/netflix.svg" alt="Image Description">
+              </div>
+            </div>
+          </div>
+          <!-- End Clients -->
+        </div>
+
+        <div class="col-md-5 col-lg-4">
+          <div class="pl-md-4">
+            <span class="d-block display-3 text-primary text-lh-sm">99.9%</span>
+            <p>Believe basic computer skills are all you need to plan projects with Front Pay.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Clients Section -->
+
+    <!-- How To Section -->
+    <div class="container space-2 space-top-lg-4 space-bottom-lg-3">
+      <!-- Title -->
+      <div class="w-lg-50 text-center mx-lg-auto mb-5">
+        <h2>Simple and affordable.<br>Pay as you go.</h2>
+        <p>From boarding passes to movie tickets, there's pretty much nothing you can't store with Front Pay. Plus, you can take your money further with exclusive offers, discounts, and even reminders to use your loyalty card when you enter the store.</p>
+      </div>
+      <!-- End Title -->
+
+      <!-- Fancybox -->
+      <div class="text-center mx-auto mb-11">
+        <a class="js-fancybox" href="javascript:;"
+           data-hs-fancybox-options='{
+             "src": "//youtube.com/j8uxIKcxArA",
+             "caption": "Front - Responsive Website Template",
+             "speed": 700,
+             "buttons": ["fullScreen", "close"],
+             "youtube": {
+               "autoplay": 1
+             }
+           }'>
+          <i class="fas fa-play-circle align-middle text-primary font-size-3 mr-2"></i>
+          See how your info is protected
+        </a>
+      </div>
+      <!-- End Fancybox -->
+
+      <!-- Icon Blocks Section -->
+      <div class="row justify-content-md-center mb-11">
+        <div class="col-md-4 col-lg-3 mb-9 mb-lg-0">
+          <!-- Icon Block -->
+          <div class="step-dots text-center px-lg-4">
+            <figure class="max-w-10rem mx-auto mb-3">
+              <img class="img-fluid" src="./assets/svg/icons/icon-48.svg" alt="SVG">
+            </figure>
+            <h4>Create an account</h4>
+          </div>
+          <!-- End Icon Block -->
+        </div>
+
+        <div class="col-md-4 col-lg-3 mb-9 mb-lg-0">
+          <!-- Icon Block -->
+          <div class="step-dots text-center px-lg-4">
+            <figure class="max-w-10rem mx-auto mb-3">
+              <img class="img-fluid" src="./assets/svg/icons/icon-39.svg" alt="SVG">
+            </figure>
+            <h4>Link your bank account</h4>
+          </div>
+          <!-- End Icon Block -->
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+          <!-- Icon Block -->
+          <div class="text-center px-lg-4">
+            <figure class="max-w-10rem mx-auto mb-3">
+              <img class="img-fluid" src="./assets/svg/icons/icon-20.svg" alt="SVG">
+            </figure>
+            <h4>Your account is validated</h4>
+          </div>
+          <!-- End Icon Block -->
+        </div>
+      </div>
+      <!-- End Icon Blocks Section -->
+
+      <div class="max-w-50rem mx-auto" data-aos="fade-up">
+        <img class="img-fluid" src="./assets/svg/illustrations/visa-card.svg" alt="Image Description">
+      </div>
+    </div>
+    <!-- End How To Section -->
+
+    <!-- CTA Section -->
+    <div class="bg-primary">
+      <div class="container space-2">
+        <div class="row justify-content-lg-between align-items-lg-center text-center text-lg-left">
+          <div class="col-lg-5 mb-5 mb-lg-0">
+            <h2 class="text-white mb-0">Create better experiences with Front Pay</h2>
+          </div>
+
+          <div class="col-lg-5 text-lg-right">
+            <a class="btn btn-indigo btn-wide btn-pill transition-3d-hover mx-1 mb-2" href="#">Get Started</a>
+            <a class="btn btn-light btn-wide btn-pill transition-3d-hover mx-1 mb-2" href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End CTA Section -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="container space-2 space-top-lg-3">
+    <!-- Links -->
+    <div class="row mb-11">
+      <div class="col-md-3 mb-5 mb-md-0">
+        <div class="mb-4">
+          <h5>Get our mobile app</h5>
+        </div>
+
+        <a class="btn btn-icon btn-indigo rounded-circle mr-2" href="#">
+          <i class="fab fa-apple"></i>
+        </a>
+        <a class="btn btn-icon btn-indigo rounded-circle" href="#">
+          <i class="fab fa-google-play"></i>
+        </a>
+      </div>
+
+      <div class="col-sm-4 col-md-3 mb-3 mb-sm-0">
+        <!-- Nav Links -->
+        <ul class="nav nav-sm nav-x-0 flex-column">
+          <li class="nav-item"><a class="nav-link" href="page-about-agency.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="page-services-agency.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="page-careers.html">Careers <span class="badge badge-success badge-pill ml-1">We're hiring</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="blog-newsroom.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop-classic.html">Shop with us</a></li>
+        </ul>
+        <!-- End Nav Links -->
+      </div>
+
+      <div class="col-sm-4 col-md-3 mb-3 mb-sm-0">
+        <!-- Nav Links -->
+        <ul class="nav nav-sm nav-x-0 flex-column">
+          <li class="nav-item"><a class="nav-link" href="#">Account</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">My tasks</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Edit profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Activity</a></li>
+        </ul>
+        <!-- End Nav Links -->
+      </div>
+
+      <div class="col-sm-4 col-md-3 mb-3 mb-sm-0">
+        <!-- Nav Links -->
+        <ul class="nav nav-sm nav-x-0 flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="page-pricing.html" target="_blank">
+              Pricing
+              <i class="fas fa-external-link-alt fa-xs ml-1"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="demo-help-desk/index.html" target="_blank">
+              Help
+              <i class="fas fa-external-link-alt fa-xs ml-1"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page-terms.html" target="_blank">
+              Terms &amp; Conditions
+              <i class="fas fa-external-link-alt fa-xs ml-1"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page-privacy.html" target="_blank">
+              Privacy &amp; Policy
+              <i class="fas fa-external-link-alt fa-xs ml-1"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- End Nav Links -->
+      </div>
+    </div>
+    <!-- End Links -->
+
+    <!-- Copyright -->
+    <div class="row align-items-sm-center">
+      <div class="col-sm-6 mb-4 mb-sm-0">
+        <p class="small mb-0">&copy; Front. 2020 Htmlstream. All rights reserved.</p>
+      </div>
+
+      <div class="col-sm-6 text-sm-right">
+        <!-- Social Networks -->
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item mb-2 mb-sm-0">
+            <a class="btn btn-xs btn-icon btn-soft-indigo rounded-circle" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="list-inline-item mb-2 mb-sm-0">
+            <a class="btn btn-xs btn-icon btn-soft-indigo rounded-circle" href="#">
+              <i class="fab fa-google"></i>
+            </a>
+          </li>
+          <li class="list-inline-item mb-2 mb-sm-0">
+            <a class="btn btn-xs btn-icon btn-soft-indigo rounded-circle" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item mb-2 mb-sm-0">
+            <a class="btn btn-xs btn-icon btn-soft-indigo rounded-circle" href="#">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li class="list-inline-item mb-2 mb-sm-0">
+            <a class="btn btn-xs btn-icon btn-soft-indigo rounded-circle" href="#">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- End Social Networks -->
+      </div>
+    </div>
+    <!-- End Copyright -->
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+     data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": 15
+         },
+         "show": {
+           "bottom": 15
+         },
+         "hide": {
+           "bottom": -15
+         }
+       }
+     }'>
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <!-- End Go to Top -->
+
+
+  <!-- JS Implementing Plugins -->
+  <script src="./assets/js/vendor.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="./assets/js/theme.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      var header = new HSHeader($('#header')).init();
+
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      var megaMenu = new HSMegaMenu($('.js-mega-menu'), {
+        desktop: {
+          position: 'left'
+        }
+      }).init();
+
+
+      // INITIALIZATION OF TEXT ANIMATION (TYPING)
+      // =======================================================
+      var typed = $.HSCore.components.HSTyped.init(".js-text-animation");
+
+
+      // INITIALIZATION OF FANCYBOX
+      // =======================================================
+      $('.js-fancybox').each(function () {
+        var fancybox = $.HSCore.components.HSFancyBox.init($(this));
+      });
+
+
+      // INITIALIZATION OF AOS
+      // =======================================================
+      AOS.init({
+        duration: 650,
+        once: true
+      });
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      $('.js-go-to').each(function () {
+        var goTo = new HSGoTo($(this)).init();
+      });
+    });
+  </script>
+
+  <!-- IE Support -->
+  <script>
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="./assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
+  </script>
+</body>
+</html>
