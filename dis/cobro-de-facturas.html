@@ -1,0 +1,658 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Cobro de Facturas - Legalbox</title>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="shortcut icon" href="../assets/svg/logos/Legalbox-isotipo.svg">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+  <link rel="stylesheet" href="../assets/css/theme.css">
+
+  <link rel="stylesheet" href="../assets/css/vendor.css">
+</head>
+<body>
+
+<header id="header" class="header header-box-shadow-on-scroll header-abs-top header-bg-transparent header-show-hide"
+data-hs-header-options='{
+"fixMoment": 1000,
+"fixEffect": "slide"
+}'>
+
+<div class="header-section">
+<div class="container header-hide-content pt-2">
+<div class="d-flex align-items-center">
+
+
+<div class="ml-auto">
+
+</div>
+</div>
+</div>
+
+<div id="logoAndNav" class="container">
+<nav class="js-mega-menu navbar navbar-expand-lg">
+    <a class="navbar-brand" href="../" aria-label="Legalbox">
+    <img src="../assets/svg/logos/legalbox_logo.svg" alt="Logo">
+</a>
+
+<button type="button" class="navbar-toggler btn btn-icon btn-sm rounded-circle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="navBar"
+        data-toggle="collapse"
+        data-target="#navBar">
+<span class="navbar-toggler-default">
+    <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"/>
+    </svg>
+</span>
+<span class="navbar-toggler-toggled">
+    <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+    </svg>
+</span>
+</button>
+
+<div id="navBar" class="collapse navbar-collapse">
+<div class="navbar-body header-abs-top-inner">
+    <ul class="navbar-nav">
+
+    <li class="hs-has-sub-menu navbar-nav-item">
+        <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle " href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Servicios</a>
+
+        <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;">
+        <div class="hs-has-sub-menu">
+            <a id="navLinkPagesAccount" class="hs-mega-menu-invoker dropdown-item dropdown-item-toggle " href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesAccount">Cobranza <span class="badge badge-success badge-pill ml-2">Online</span></a>
+
+            <div id="navSubmenuPagesAccount" class="hs-sub-menu dropdown-menu" aria-labelledby="navLinkPagesAccount" style="min-width: 230px;">
+            <a class="dropdown-item " href="../servicios/cobranza-judicial">Cobranza Judicial</a>
+            <a class="dropdown-item " href="../servicios/cobranza-judicial-prejudicial">Cobranza Prejudicial</a>
+            <a class="dropdown-item " href="../servicios/juicio-civil-cobro">Juicio Civil de Cobro</a>
+            </div>
+        </div>
+
+        <div class="hs-has-sub-menu">
+            <a id="navLinkPagesAccount" class="hs-mega-menu-invoker dropdown-item dropdown-item-toggle " href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesAccount">Incobrables</a>
+
+            <div id="navSubmenuPagesAccount" class="hs-sub-menu dropdown-menu" aria-labelledby="navLinkPagesAccount" style="min-width: 230px;">
+            <a class="dropdown-item " href="../servicios/certificado-incobrabilidad">Certificado Incobrabilidad</a>
+            <a class="dropdown-item " href="../servicios/recupera-iva">Recuperar IVA</a>
+            </div>
+        </div>
+
+        </div>
+    </li>
+
+    <li class="hs-has-sub-menu navbar-nav-item">
+        <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle " href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="blogSubMenu">Recursos</a>
+
+        <div id="blogSubMenu" class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg fadeOut animated" aria-labelledby="blogMegaMenu" style="min-width: 230px; display: none; animation-duration: 300ms;">
+        <a class="dropdown-item " href="../recursos/index">Guías y Artículos</a>
+        <a class="dropdown-item " href="../recursos/preguntas-frecuentes">Preguntas Frecuentes</a>
+        </div>
+    </li>
+
+    <li class="navbar-nav-item">
+        <a class="nav-link" href="../precios">Precios</a>
+    </li> 
+
+    <li class="navbar-nav-item">
+        <a class="nav-link" href="../contacto.html">Contactar</a>
+    </li> 
+
+    <li class="navbar-nav-last-item">
+        <a class="btn btn-sm btn-outline-primary transition-3d-hover mr-2" href="https://app.legalbox.cl/login">Inicia Sesión</a>
+        <a class="btn btn-sm btn-primary transition-3d-hover" href="https://app.legalbox.cl/signup">Comenzar</a>
+    </li>
+    </ul>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</header>    
+
+
+  <main id="content" role="main">
+    <!-- Hero Section -->
+    <div class="gradient-x-overlay-sm-indigo position-relative overflow-hidden">
+      <div class="container space-top-3 space-top-lg-4 space-bottom-2">
+        <div class="w-lg-60 text-center mx-lg-auto">
+          <div class="mb-5">
+            <h1 class="display-4 mb-3">Cobro <span class="text-primary">judicial</span> de facturas</h1>
+            <p class="lead">Recupere títulos impagos con el software legal de cobranza orientado a resultados - por abogados</p>
+          </div>
+          <a class="btn btn-soft-indigo transition-3d-hover" href="#">Comenzar</a>
+          <small class="text-muted my-3 my-sm-0 mx-2 mx-sm-3">o</small>
+          <a class="btn btn-primary transition-3d-hover" href="#">Ver precios  <i class="fas fa-angle-right ml-1"></i></a>
+        </div>
+      </div>
+
+      <!-- Mockup -->
+      <div class="container space-2">
+        <div class="position-relative w-lg-75 text-center mx-lg-auto">
+          <div class="position-relative shadow-lg z-index-2 rounded-lg" data-aos="fade-up" data-aos-offset="-50">
+            <img class="img-fluid rounded-lg" src="../assets/img/1618x1010/img3.jpg" alt="Image Description">
+          </div>
+
+          <figure class="max-w-15rem w-100 position-absolute top-0 right-0" data-aos="fade-up" data-aos-delay="100" data-aos-offset="-50">
+            <div class="mt-n11 mr-n11">
+              <img class="img-fluid" src="../assets/svg/components/dots-1.svg" alt="Image Description">
+            </div>
+          </figure>
+          <figure class="max-w-15rem w-100 position-absolute bottom-0 left-0" data-aos="fade-up">
+            <div class="mb-n7 ml-n7">
+              <img class="img-fluid" src="../assets/svg/components/dots-1.svg" alt="Image Description">
+            </div>
+          </figure>
+        </div>
+      </div>
+      <!-- End Mockup -->
+
+      <!-- SVG Background Shape -->
+      <figure class="w-35 position-absolute top-0 right-0 z-index-n1 mt-n11 mr-n11">
+        <img class="img-fluid" src="../assets/svg/components/half-circle-1.svg" alt="Image Description">
+      </figure>
+
+      <figure class="w-25 position-absolute bottom-0 left-0 z-index-n1 mb-n11 ml-n11">
+        <img class="img-fluid" src="../assets/svg/components/half-circle-2.svg" alt="Image Description">
+      </figure>
+      <!-- End SVG Background Shape -->
+    </div>
+    <!-- End Hero Section -->
+
+    <!-- Features Section -->
+    <div class="container space-2 space-lg-3">
+      <div class="row align-items-lg-center">
+        <div class="col-lg-5 order-lg-2 mb-7 mb-lg-0">
+          <div class="mb-5">
+            <h2 class="mb-3">Exija el pago total adeudado y más</h2>
+            <p>La cobranza judicial le permite maximizar el cobro al deudor, Legalbox exige el pago total de:</p>
+          </div>
+
+          <!-- Info -->
+          <div class="media pb-3">
+            <span class="icon icon-xs icon-soft-indigo icon-circle mr-3">
+              <i class="fas fa-check"></i>
+            </span>
+            <div class="media-body">
+              <p class="text-dark mb-0">Monto total de facturas impagas</p>
+            </div>
+          </div>
+          <div class="media py-3">
+            <span class="icon icon-xs icon-soft-indigo icon-circle mr-3">
+              <i class="fas fa-check"></i>
+            </span>
+            <div class="media-body">
+              <p class="text-dark mb-0">Intereses (12.5% anual)</p>
+            </div>
+          </div>
+          <div class="media pt-3">
+            <span class="icon icon-xs icon-soft-indigo icon-circle mr-3">
+              <i class="fas fa-check"></i>
+            </span>
+            <div class="media-body">
+              <p class="text-dark mb-0">Gastos de notificación ($150.000 aprox.)</p>
+            </div>
+          </div>
+          <!-- End Info -->
+        </div>
+
+        <div class="col-lg-7 order-lg-1">
+          <!-- Card Block -->
+          <div class="pr-lg-4" data-aos="fade-up">
+            <div class="card shadow-none bg-soft-primary text-indigo text-center w-lg-75 overflow-hidden pt-9 px-5 mx-lg-auto">
+              <div class="px-5 mb-5">
+                <h3>100% online, sin trámites.</h3>
+              </div>
+
+              <!-- Device Mockup -->
+              <div class="device device-half-iphone-x w-85 mx-auto">
+                <img class="device-half-iphone-x-frame" src="../assets/svg/components/half-iphone-x.svg" alt="Image Description">
+                <img class="device-half-iphone-x-screen" src="../assets/img/407x472/img7.jpg" alt="Image Description">
+              </div>
+              <!-- End Device Mockup -->
+            </div>
+          </div>
+          <!-- End Card Block -->
+        </div>
+      </div>
+    </div>
+    <!-- End Features Section -->
+
+    <!-- CTA Section -->
+    <div class="container">
+      <div class="w-lg-85 mx-lg-auto">
+        <div class="card overflow-hidden p-5">
+          <div class="row justify-content-md-start align-items-md-center text-center text-md-left">
+            <div class="col-md-8 col-lg-5 offset-lg-3 mb-3 mb-md-0">
+              <h3 class="h4 text-indigo mb-0">Comience ahora y exija el pago de facturas y más</h3>
+            </div>
+
+            <div class="col-md-4 text-md-right">
+              <a class="btn btn-primary transition-3d-hover" href="https://app.legalbox.cl/signup">Cobre Ahora</a>
+            </div>
+          </div>
+
+          <!-- SVG Component -->
+          <figure class="w-35 position-absolute top-0 left-0 mt-n11 ml-n11">
+            <img class="img-fluid" src="../assets/svg/components/half-circle-2.svg" alt="Image Description">
+          </figure>
+          <!-- End SVG Component -->
+        </div>
+      </div>
+    </div>
+    <!-- End CTA Section -->
+
+    <!-- Features Section -->
+    <div class="container space-2 space-lg-3">
+      <div class="row align-items-lg-center">
+        <div class="col-lg-5 mb-7 mb-lg-0">
+          <div class="mb-5">
+            <h2 class="mb-3">Software 100% online - sin trámites</h2>
+            <p>Legalbox elimina la burocracia para que no gaste más tiempo ni recursos en deudores reticentes a pagar.</p>
+          </div>
+
+          <!-- Info -->
+          <div class="media pb-3">
+            <span class="icon icon-xs icon-soft-indigo icon-circle mr-3">
+              <i class="fas fa-check"></i>
+            </span>
+            <div class="media-body">
+              <p class="text-dark mb-0">Cree de cobranzas en línea</p>
+            </div>
+          </div>
+          <div class="media py-3">
+            <span class="icon icon-xs icon-soft-indigo icon-circle mr-3">
+              <i class="fas fa-check"></i>
+            </span>
+            <div class="media-body">
+              <p class="text-dark mb-0">Siga los avances en un dashboard digital</p>
+            </div>
+          </div>
+          <div class="media pt-3">
+            <span class="icon icon-xs icon-soft-indigo icon-circle mr-3">
+              <i class="fas fa-check"></i>
+            </span>
+            <div class="media-body">
+              <p class="text-dark mb-0">Reciba el dinero por transferencia</p>
+            </div>
+          </div>
+          <!-- End Info -->
+        </div>
+
+        <div class="col-lg-7">
+          <!-- Card Block -->
+          <div class="pl-lg-4" data-aos="fade-up">
+            <div class="card shadow-none bg-soft-info text-indigo text-center w-lg-75 overflow-hidden pt-9 px-5 mx-lg-auto">
+              <div class="px-5 mb-5">
+                <h3>Integrate with the tools and workflow you already use</h3>
+              </div>
+
+              <!-- Device Mockup -->
+              <div class="device device-half-iphone-x w-85 mx-auto">
+                <img class="device-half-iphone-x-frame" src="../assets/svg/components/half-iphone-x.svg" alt="Image Description">
+                <img class="device-half-iphone-x-screen" src="./assets/img/407x472/img8.jpg" alt="Image Description">
+              </div>
+              <!-- End Device Mockup -->
+            </div>
+          </div>
+          <!-- End Card Block -->
+        </div>
+      </div>
+    </div>
+    <!-- End Features Section -->
+
+    <div class="overflow-hidden space-2 space-lg-3">
+        <div>
+          <div class="container space-top-3 space-bottom-2">
+            <div class="w-md-80 w-lg-60 text-center mx-auto mb-9">
+              <span class="d-block small font-weight-bold text-cap mb-2">Cuánto cuesta</span>
+              <h1>Sólo una comisión <br> sobre el <span class="text-primary text-highlight-success"> total cobrado</span></h1>
+              <p>Nos orientamos a los resultados </p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="container mt-n10">
+          <div class="w-lg-80 mx-lg-auto position-relative">
+            <div class="row position-relative z-index-2 mx-n2 mb-5">
+              <div class="col-sm-6 col-md-4 px-2 mb-3">
+                <div class="card h-100">
+                  <div class="card-header text-center">
+                    <span class="d-block h3">Judicial</span>
+                    <span class="d-block mb-2">
+                      <span class="font-size-4 text-dark font-weight-bold mr-n2">
+                        10
+                      </span>
+                      <span class="font-size-1">%</span>
+                    </span>
+                  </div>
+                  
+                  <div class="card-body">
+                    <div class="media font-size-1 mb-3">
+                      <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                      <div class="media-body">
+                        Cobranza judicial
+                      </div>
+                    </div>
+                    <div class="media font-size-1 mb-3">
+                      <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                      <div class="media-body">
+                        Sin costo inicial
+                      </div>
+                    </div>
+                    <div class="media font-size-1 mb-3">
+                      <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                      <div class="media-body">
+                        Cuenta gratis
+                      </div>
+                    </div>
+                    <div class="media font-size-1 mb-3">
+                      <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                      <div class="media-body">
+                        Reportes en línea
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-center mb-4">
+                    <p class="small">Gastos de notificación <br> y mandato: $160.000</p>
+                  </div>
+      
+                  <div class="card-footer border-0">
+                    <a type="button" class="btn btn-soft-primary btn-block transition-3d-hover" href="https://app.legalbox.cl/signup">Cobrar Ahora</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-sm-6 col-md-4 px-2 mb-3">
+                <div class="card bg-primary text-white h-100 shadow-primary-lg">
+                  <div class="card-header border-0 bg-primary text-white text-center">
+                    <span class="d-block h3 text-white">Judicial +</span>
+                    <span class="d-block mb-2">
+                      <span class="font-size-4 text-white font-weight-bold mr-n2">
+                        10
+                      </span>
+                      <span class="font-size-1">%</span>
+                    </span>
+                  </div>
+      
+                  <div class="border-top opacity-xs"></div>
+      
+                  <div class="card-body">
+                    <div class="media font-size-1 mb-3">
+                      <i class="fas fa-check-circle mt-1 mr-2"></i>
+                      <div class="media-body">
+                        Cobranza prejudicial
+                      </div>
+                    </div>
+                    <div class="media font-size-1 mb-3">
+                      <i class="fas fa-check-circle mt-1 mr-2"></i>
+                      <div class="media-body">
+                        Cobranza judicial
+                      </div>
+                    </div>
+                    <div class="media font-size-1 mb-3">
+                      <i class="fas fa-check-circle mt-1 mr-2"></i>
+                      <div class="media-body">
+                        Sin costo inicial
+                      </div>
+                    </div>
+                    <div class="media font-size-1 mb-3">
+                      <i class="fas fa-check-circle mt-1 mr-2"></i>
+                      <div class="media-body">
+                        Cuenta gratis
+                      </div>
+                    </div>
+                    <div class="media font-size-1 mb-3">
+                      <i class="fas fa-check-circle mt-1 mr-2"></i>
+                      <div class="media-body">
+                        Reportes en línea
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="text-center mb-4">
+                    <p class="small">Gastos de notificación <br> y mandato: $160.000</p>
+                  </div>
+      
+                  <div class="card-footer border-0 bg-primary text-white">
+                    <a type="button" class="btn btn-light text-primary btn-block transition-3d-hover" href="https://app.legalbox.cl/signup">Cobrar Ahora</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-sm-6 col-md-4 px-2 mb-3">
+                <div class="card h-100">
+                  <div class="card-header text-center">
+                    <span class="d-block h3">Civil</span>
+                    <span class="d-block mb-2">
+                      <span class="font-size-4 text-dark font-weight-bold mr-n2">
+                        10
+                      </span>
+                      <span class="font-size-1">%</span>
+                    </span>
+                  </div>
+      
+                  <div class="card-body">
+                    <div class="media font-size-1 text-body mb-3">
+                      <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                      <div class="media-body">
+                        Juicio Civil de Cobro
+                      </div>
+                    </div>
+                    <div class="media font-size-1 text-body mb-3">
+                      <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                      <div class="media-body">
+                        Cuenta gratis
+                      </div>
+                    </div>
+                    <div class="media font-size-1 text-body mb-3">
+                      <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                      <div class="media-body">
+                        Reportes en línea
+                      </div>
+                    </div>
+                    <div class="media font-size-1 text-body mb-3">
+                      <i class="fas fa-dollar-sign text-gray mt-1 mr-2"></i>
+                      <div class="media-body">
+                        Costo inicial: desde $300.000
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="text-center mb-4">
+                    <p class="small">Gastos de notificación <br> y mandato: $160.000</p>
+                  </div>
+      
+                  <div class="card-footer border-0">
+                    <a type="button" class="btn btn-soft-primary btn-block transition-3d-hover" href="https://app.legalbox.cl/signup">Cobrar Ahora</a>
+                  </div>
+                  
+                  
+                </div>
+              </div>
+            </div>
+            <div class="position-relative z-index-2 text-center">
+              <div class="d-inline-block font-size-1 border bg-white text-center rounded-pill py-3 px-4">
+                ¿Tienes dudas? <a class="d-block d-sm-inline-block font-weight-bold ml-sm-3" href="./recursos/preguntas-frecuentes">Preguntas frecuentes <span class="fas fa-angle-right ml-1"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+  
+  <footer class="bg-light">
+    <div class="container space-2">
+      <div class="row align-items-md-center text-center text-md-left">
+        <div class="col-md-8 mb-3 mb-md-0">
+          <h2 class="h3">Cobranza judicial y más</h2>
+          <p class="mb-0">3 pasos para recuperar su dinero.</p>
+        </div>
+        <div class="col-md-4 text-md-right">
+          <a class="btn btn-primary transition-3d-hover" href="https://app.legalbox.cl/signup">Cobrar Ahora <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="border-top space-2">
+        <div class="row justify-content-md-between">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <a class="d-inline-flex mb-4" href="#" aria-label="Front">
+              <img class="brand" src="../assets/svg/logos/legalbox_logo.svg" alt="Logo">
+            </a>
+            <p>Buscamos una justicia digital para resolver tus problemas.</p>
+          </div>
+    
+          <div class="col-6 col-sm-4 col-lg-2 mb-4 mb-lg-0">
+            <h3 class="h5">Servicios</h3>
+    
+            <ul class="nav nav-sm nav-x-0 flex-column">
+              <li class="nav-item"><a class="nav-link" href="./servicios/cobranza-judicial">Judicial</a></li>
+              <li class="nav-item"><a class="nav-link" href="./servicios/cobranza-judicial-prejudicial">Prejudicial</a></li>
+              <li class="nav-item"><a class="nav-link" href="./servicios/juicio-civil-cobro">Juicio Civil</a></li>
+              <li class="nav-item"><a class="nav-link" href="./servicios/certificado-incobrabilidad">C. Incobrabilidad</a></li>
+              <li class="nav-item"><a class="nav-link" href="./servicios/recupera-iva">Recupera IVA</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-sm-4 col-lg-2 mb-4 mb-lg-0">
+            <h3 class="h5">Recursos</h3>
+    
+            <ul class="nav nav-sm nav-x-0 flex-column">
+              <li class="nav-item"><a class="nav-link" href="./recursos">Guías y Artículos</a></li>
+              <li class="nav-item"><a class="nav-link" href="./recursos/preguntas-frecuentes">Preguntas frecuentes</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-sm-4 col-lg-2">
+            <h3 class="h5">Cuenta</h3>
+    
+            <ul class="nav nav-sm nav-x-0 flex-column">
+              <li class="nav-item"><a class="nav-link" href="https://app.legalbox.cl/signup">Crear cuenta</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://app.legalbox.cl/login">Ingresar</a></li>
+              <li class="nav-item"><a class="nav-link" href="./contacto">Contactar</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Go to Top -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+     data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": 15
+         },
+         "show": {
+           "bottom": 15
+         },
+         "hide": {
+           "bottom": -15
+         }
+       }
+     }'>
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <!-- End Go to Top -->
+
+
+  <!-- JS Implementing Plugins -->
+  <script src="./assets/js/vendor.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="./assets/js/theme.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      var header = new HSHeader($('#header')).init();
+
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      var megaMenu = new HSMegaMenu($('.js-mega-menu'), {
+        desktop: {
+          position: 'left'
+        }
+      }).init();
+
+
+      // INITIALIZATION OF UNFOLD
+      // =======================================================
+      var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+
+
+      // INITIALIZATION OF UNFOLD
+      // =======================================================
+      $('.js-hs-search-unfold-invoker').each(function() {
+        var searchUnfold = new HSUnfold($(this), {
+          afterOpen: function() {
+            $('#searchSlideDownControl').focus();
+          }
+        }).init();
+      });
+
+
+      // INITIALIZATION OF FORM VALIDATION
+      // =======================================================
+      $('.js-validate').each(function() {
+        $.HSCore.components.HSValidation.init($(this), {
+          rules: {
+            confirmPassword: {
+              equalTo: '#signupPassword'
+            }
+          }
+        });
+      });
+
+
+      // INITIALIZATION OF SHOW ANIMATIONS
+      // =======================================================
+      $('.js-animation-link').each(function () {
+        var showAnimation = new HSShowAnimation($(this)).init();
+      });
+
+
+      // INITIALIZATION OF AOS
+      // =======================================================
+      AOS.init({
+        duration: 650,
+        once: true
+      });
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      $('.js-go-to').each(function () {
+        var goTo = new HSGoTo($(this)).init();
+      });
+    });
+  </script>
+
+  <!-- IE Support -->
+  <script>
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="./assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
+  </script>
+</body>
+</html>
